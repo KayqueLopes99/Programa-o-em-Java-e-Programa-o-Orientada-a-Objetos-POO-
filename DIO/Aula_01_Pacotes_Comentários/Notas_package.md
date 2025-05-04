@@ -37,4 +37,3 @@ public class Main {
 > 🔸 O caminho do arquivo `Main.java` precisa estar em `br/com/jose/sistema/` para corresponder ao `package br.com.jose.sistema;`
 
 - Use nomes de pacotes em **letras minúsculas**, por convenção.
-
