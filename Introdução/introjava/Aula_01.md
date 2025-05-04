@@ -1,0 +1,18 @@
+## Observações para desenvolver depois:
+- Nomenclatura Maiuscula.
+- Nome do arquivo deve ser o mesmo nome da classe.
+- Javadocs - documentação das funcionalidades. 
+- Comentários, variaveis e constantes. 
+- Regras base e nomenclatura Snake_Case.
+- Tipos primitivos (boolean- Novo nome).
+- Tipos por referência (definidos pelas classes). 
+- Ex: Strnig já presente no java.
+- No float tem uma observação: float num = 3.14F <- SE NÃO TIVER O F NÃO SÉRA FLOAT E SIM DOUBLE> 
+- Entrada e saída de dados (print, println, printf)
+- concatenação e multiplicação. 
+- Scanner name e name.close()
+- Operações e prioridade. 
+- Operadores relacionais, lógicos
+- Condicionais if else, switch, operador ternario. 
+- estruturas de repetição. 
+- pré e pós incremento. 
