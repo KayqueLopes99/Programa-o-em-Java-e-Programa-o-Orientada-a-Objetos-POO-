@@ -12,9 +12,7 @@
 
 
 ## 02. Operadores Relacionais (Comparação)
-
 - Usados para comparar dois valores. O resultado sempre será `true` ou `false`.
-
 | Operador | Significado      | Exemplo  |
 | -------- | ---------------- | -------- |
 | `==`     | Igual a          | `x == y` |
@@ -24,6 +22,7 @@
 | `>=`     | Maior ou igual a | `x >= y` |
 | `<=`     | Menor ou igual a | `x <= y` |
 
+- Para comparar objetos do tipo String, podemos utilizar o método equals: ``str1.equals(str2)``
 
 ## 03. Operadores Unários
 - Operam em apenas **um operando**.
@@ -46,18 +45,17 @@
 ```java
 public class IncrementoExemplo {
     public static void main(String[] args) {
-        int a = 5;
-        System.out.println("Pós-incremento: " + (a++)); // 5
-        System.out.println("Agora a vale: " + a);       // 6
+        // Vamos observar os resultados das execuções dos códigos a seguir:
+     int a = 5;
+     int b = 5 + a++;
+      System.out.println("a = " + a  + " b = " + b);
+     // a = 6 b = 10
+    int c = 5;
+    int d = 5 + ++c;
+      System.out.println("c = " + c  + " d = " + d);
+    // c = 6 d = 11
 
-        int b = 5;
-        System.out.println("Pré-incremento: " + (++b)); // 6
-        System.out.println("Agora b vale: " + b);       // 6
     }
 }
-
-```
-
-
 
 ```

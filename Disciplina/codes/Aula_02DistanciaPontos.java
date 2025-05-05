@@ -2,7 +2,7 @@ package Disciplina.codes;
 
 import java.util.Scanner;
 
-public class Aula_02 {
+public class Aula_02DistanciaPontos {
     // Distância entre dois pontos.
     public static void main(String[] args){
         double x1, y1, x2, y2, dist;
@@ -22,7 +22,7 @@ public class Aula_02 {
 
         dist = Math.sqrt(Math.pow(x1 - x2, 2.0) + Math.pow(y1 - y2, 2.0));
 
-        System.out.println(dist);
+        System.out.printf("Distancia entre (%.2f,%.2f) e (%.2f,%.2f): %.2f\n", x1, y1, x2, y2, dist);
         // System.out.println("Distancia entre (" + x1 + "," + y1 + ") e (" + x2 + "," + y2 + "): ", dist);
 
         ent.close();

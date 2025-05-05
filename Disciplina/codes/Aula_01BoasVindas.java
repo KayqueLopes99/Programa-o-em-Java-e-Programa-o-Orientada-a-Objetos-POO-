@@ -2,7 +2,7 @@
 package Disciplina.codes;
 import java.util.Scanner;
 
-public class Aula_01_BoasVindas {
+public class Aula_01BoasVindas {
     public static void main(String[] args){
        String nome;
        Scanner entrada = new Scanner(System.in); 

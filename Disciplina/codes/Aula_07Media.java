@@ -2,7 +2,7 @@ package Disciplina.codes;
 
 import java.util.Scanner;
 
-public class Aula_07 {
+public class Aula_07Media {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         double num1, num2, num3, m;

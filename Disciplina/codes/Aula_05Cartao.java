@@ -4,7 +4,7 @@ package Disciplina.codes;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class Aula_05 {
+public class Aula_05Cartao {
        public static void main(String[] args) {
         // Valida cartão 
 

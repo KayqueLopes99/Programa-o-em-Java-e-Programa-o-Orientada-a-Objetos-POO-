@@ -2,7 +2,7 @@ package Disciplina.codes;
 
 import java.util.Scanner;
 
-public class Aula_08 {
+public class Aula_08RecursaoFatorial {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         int num, fat;

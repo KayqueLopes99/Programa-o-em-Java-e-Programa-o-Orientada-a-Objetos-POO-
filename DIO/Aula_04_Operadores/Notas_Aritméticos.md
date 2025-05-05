@@ -44,9 +44,9 @@ int resultado = a * b;  // resultado = 18
 ```
 
 ### 4. `/` Operador de Divisão
-
 - Divide o primeiro valor pelo segundo.
 - CUIDADO: se ambos os operandos forem `int`, o resultado será inteiro!
+- A divisão de inteiros produz um quociente inteiro. Por exemplo, a expressão 7 / 4 é avaliada como 1.
 
 ```java
 int a = 10;
@@ -86,6 +86,7 @@ if (numero % 2 == 0) {
 | 1          | `()`        | Parênteses (forçam a ordem)     | Da esquerda para a direita |
 | 2          | `*` `/` `%` | Multiplicação, divisão e módulo | Da esquerda para a direita |
 | 3          | `+` `-`     | Adição e subtração              | Da esquerda para a direita |
+- Ultimo avaliado é o ``=``.
 
 - *Para multiplicar a String usa-se  método repeat(int count) da classe String*.
 ```java
@@ -94,5 +95,10 @@ String repetido = texto.repeat(3); // "Olá! Olá! Olá! "
 ```
 - Biblioteca Math e seus comandos são usados para outras operações matemáticas mais complexas, como potência, raiz quadrada, ...
 
+### Parenteses
+- Os parênteses são utilizados para agrupar termos em expressões Java da mesma maneira como em expressões algébricas.
+- Para multiplicar a por b + c escrevemos a * (b + c).
+- Se uma expressão contiver parênteses aninhados, como ((a + b) * c), a expressão no conjunto mais interno dentro dos parênteses é avaliada primeiro
+- Parênteses tem precedência com relação as operações aritméticas.
 
 

@@ -2,7 +2,7 @@ package Disciplina.codes;
 
 import java.text.DecimalFormat;
 
-public class Aula_04 {
+public class Aula_04Velocidade {
     public static void main(String[] args){
 
             double kmph = 0.0, mps, mph, fps;

@@ -1,6 +1,11 @@
 ##  Operadores Lógicos
 - Usados para **combinar ou inverter valores booleanos** (verdadeiro ou falso) em expressões lógicas, como em `if`, `while`, ...
-
+- Valores do tipo boolean e resultados de operações ou métodos que retornem valores booleanos podem ser combinados entre si através dos operadores lógicos:
+- `&&` (AND) - E lógico
+- `||` (OR) - OU lógico
+- Exemplo: ((a >= b) && (a>=c))
+- Há também o operador de negação ! ( NÃO ) que inverte o valor de um booleano
+``!(2>3) retorna true``
 ## 0.1 Operador AND (`&&`)
 -  **Só retorna `true` se as duas condições forem verdadeiras.**
 -  É como dizer: "**isto E aquilo**".
