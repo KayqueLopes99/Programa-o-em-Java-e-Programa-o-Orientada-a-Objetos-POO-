@@ -1,5 +1,6 @@
 ## Comentários em Java
 - Os comentários são trechos de código que não são executados, mas servem para documentar o código e torná-lo mais legível.
+- O compilador Java ignora os comentários.
 - Informativos.
 + Tipos de comentários:
 

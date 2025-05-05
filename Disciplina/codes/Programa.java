@@ -1,4 +1,5 @@
-package codes;
+package Disciplina.codes;
+
 
 public class Programa {
     public static void main(String[] args){

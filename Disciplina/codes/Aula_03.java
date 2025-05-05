@@ -1,4 +1,4 @@
-package codes;
+package Disciplina.codes;
 
 import java.util.Scanner;
 

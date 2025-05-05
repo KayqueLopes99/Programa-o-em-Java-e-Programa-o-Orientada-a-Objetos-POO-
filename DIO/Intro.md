@@ -30,4 +30,8 @@ java MeuPrograma # Executa o bytecode
 - Snake case: `minhaVariavel` (variáveis e métodos)
 - Pascal case: `MinhaClasse` (classes e interfaces)
 - Nome do pacote: sempre em letras minúsculas, separadas por pontos (ex: `br.com.exemplo`).
-- Nome do arquivo: deve correspondeA funcionalidade do código. 
+- Nome do arquivo: deve corresponde a funcionalidade do código. 
+- Importante: O nome da classe de ser o mesmo do arquivo.
+
+---
+![Java](image\image1.png)
