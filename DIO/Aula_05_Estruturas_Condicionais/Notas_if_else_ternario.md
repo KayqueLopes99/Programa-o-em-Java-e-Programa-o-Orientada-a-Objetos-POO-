@@ -2,9 +2,11 @@
 - Permitem que o programa tome decisões lógicas com base em condições booleanas (true ou false). São fundamentais para controlar o fluxo de execução do código.
 - Use `{}` para delimitar os blocos
 ### `if` (se)
--* O bloco `if` **executa um código somente se a condição for verdadeira** (`true`).
+- O bloco `if` **executa um código somente se a condição for verdadeira** (`true`).
+- Se desejar que todas as condições sejam verificadas, use vários ifs. 
 - Sintaxe:
 ```java
+// se a condição for uma varíavel é o mesmo de falar se é true. 
 if (condicao) {
     // código executado se condicao for verdadeira
 }
@@ -44,7 +46,6 @@ if (idade >= 18) {
 ### `else if` (senão se)
 - Permite testar **várias condições diferentes**.
 - **mais de dois caminhos possíveis**.
-
 - Sintaxe:
 
 ```java
@@ -82,5 +83,20 @@ if (condicao1) {
     }
 }
 ```
+## O Operador Ternário
+- Usado como uma forma curta de `if-else`.
+- Sintaxe:
+
+``` java
+condição ? valor_se_verdadeiro : valor_se_falso;
+
+```
+- Exemplo: 
+
+```java
+int idade = 20;
+String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+
+
 
 ---

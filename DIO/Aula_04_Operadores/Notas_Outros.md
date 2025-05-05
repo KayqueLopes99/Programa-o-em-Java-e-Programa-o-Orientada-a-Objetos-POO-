@@ -59,17 +59,5 @@ public class IncrementoExemplo {
 ```
 
 
-## 04. Operador Ternário
-- Usado como uma forma curta de `if-else`.
-- Sintaxe:
 
-``` java
-condição ? valor_se_verdadeiro : valor_se_falso;
-
-```
-- Exemplo: 
-
-```java
-int idade = 20;
-String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
 ```

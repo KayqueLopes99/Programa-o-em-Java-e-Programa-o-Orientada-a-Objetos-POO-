@@ -1,6 +1,6 @@
 package DIO.Code;
 
-public class EstruturasCondicionais {
+public class EstruturasCondicionais2 {
     public static void main(String[] args) {
 
         double nota1 = 100;
@@ -16,6 +16,21 @@ public class EstruturasCondicionais {
     
         }else{
             System.out.println("Reprovado");
+
+        int idade = 18;
+        boolean isMaiorDeIdade = idade >= 18;
+
+        if (isMaiorDeIdade) {
+            System.out.println("Você é maior de idade.");
+        } else {
+            System.out.println("Você é menor de idade.");
+        }
+
+
+
+
+
+
 
         }
     }
