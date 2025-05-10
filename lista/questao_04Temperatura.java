@@ -2,7 +2,7 @@ package lista;
 
 import java.util.Scanner;
 
-public class Temperatura {
+public class questao_04Temperatura {
     public static void main(String[] args) {
         // Questão 4
 

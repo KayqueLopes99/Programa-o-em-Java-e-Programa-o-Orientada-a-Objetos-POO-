@@ -1,4 +1,4 @@
-package Disciplina.codes;
+package Disciplina.codes.Classes.Data_;
 
 public class Aula_09ClassData {
     int dia;

@@ -2,7 +2,7 @@ package lista;
 
 import java.util.Scanner;
 
-public class questao_01 {
+public class questao_01AreaQuadrado {
     public static void main(String[] args) {
         float lado, area;
 

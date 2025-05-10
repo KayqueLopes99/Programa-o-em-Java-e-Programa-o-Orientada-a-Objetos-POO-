@@ -2,7 +2,7 @@ package lista;
 
 import java.util.Scanner;
 
-public class questao_03 {
+public class questao_03Angulo {
     
    public static void main(String[] args) {
 

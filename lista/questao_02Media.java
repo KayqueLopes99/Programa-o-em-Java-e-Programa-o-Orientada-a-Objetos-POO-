@@ -2,7 +2,7 @@ package lista;
 
 import java.util.Scanner;
 
-public class questao_02 {
+public class questao_02Media {
     public static void main(String[] args) {
         float media, nota_01, nota_02, nota_03;
 
