@@ -19,11 +19,6 @@ public class questao_06Periodo {
 
        leitor.close();
 
-       
-
-
-        
-        
     }
     
 }
