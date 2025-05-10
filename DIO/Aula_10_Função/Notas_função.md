@@ -4,7 +4,7 @@
 - Estrutura de uma função em Java
 
 ```java
-modificador tipoRetorno nomeDoMetodo(parâmetros) {
+modificador static tipoRetorno nomeDoMetodo(parâmetros) {
     // corpo do método
     // instruções
     return valor; // se o tipoRetorno não for void
