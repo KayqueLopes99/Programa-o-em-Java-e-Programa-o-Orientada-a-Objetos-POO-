@@ -1,4 +1,4 @@
-package lista;
+package lista1;
 
 public class questao_17Cidades {
     public static void main(String[] args) {
