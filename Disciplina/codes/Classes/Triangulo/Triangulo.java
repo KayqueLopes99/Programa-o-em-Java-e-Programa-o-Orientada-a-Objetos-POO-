@@ -1,10 +1,10 @@
 package Disciplina.codes.Classes.Triangulo;
 
 public class Triangulo {
-    double lado1;
-    double lado2;
-    double lado3;
-    String descricaoTextual;
+    private double lado1;
+    private double lado2;
+    private double lado3;
+    private String descricaoTextual;
 
     void inicializaTriangulo(double l1, double l2, double l3, String desc){
         lado1 = l1;
@@ -14,11 +14,11 @@ public class Triangulo {
 
     }
 
-    double calculaPerimetro(){
+    public double calculaPerimetro(){
         return (lado1 + lado2 + lado3);
     }
 
-    void imprimeTriangulo(){
+    public void imprimeTriangulo(){
         System.out.println("Lado 1: " + lado1);
         System.out.println("Lado 2: " + lado2);
         System.out.println("Lado 3: " + lado3);

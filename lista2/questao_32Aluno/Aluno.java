@@ -5,6 +5,8 @@ public class Aluno {
     String nome;
     double notaProva1, notaProva2, notaTrabalho;
 
+
+    
     Aluno(int matricula, String nome, double notaProva1, double notaProva2, double notaTrabalho) {
         this.matricula = matricula;
         this.nome = nome;

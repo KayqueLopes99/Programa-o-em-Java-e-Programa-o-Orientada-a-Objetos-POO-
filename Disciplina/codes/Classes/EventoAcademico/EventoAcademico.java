@@ -1,9 +1,9 @@
 package Disciplina.codes.Classes.EventoAcademico;
 
 public class EventoAcademico {
-    String nomeDoEvento;
-    String localEvento;
-    int numeroDeParticipantes;
+    private String nomeDoEvento;
+    private String localEvento;
+    private int numeroDeParticipantes;
 
     EventoAcademico(String nomeDoEvento, String localEvento, int numeroDeParticipantes) {
 
@@ -13,7 +13,7 @@ public class EventoAcademico {
         this.numeroDeParticipantes = (numeroDeParticipantes > 0 ? numeroDeParticipantes : 1);
     }
 
-    void mostraEvento(){
+    public void mostraEvento(){
         System.out.println("Nome do evento: " + nomeDoEvento);
         System.out.println("Local: " + localEvento);
         System.out.println("Participantes: " + numeroDeParticipantes);
