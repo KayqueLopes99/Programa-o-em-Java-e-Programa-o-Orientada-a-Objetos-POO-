@@ -1,26 +1,26 @@
-package lista2.questao_37Contador;
+package lista2.questao_38Lampada;
 
 public class Contador {
     private int valor;
 
-    public Contador(int valorInicial){
-        this.valor = valorInicial;
+    public Contador() {
+        this.valor = 0;
     }
 
-    public void zerar(){
+    public void zerar() {
         valor = 0;
     }
 
-    public void incrementar(){
+    public void incrementar() {
         valor++;
     }
 
     public void imprimir() {
         System.out.println("Valor atual do contador: " + valor);
     }
-    
 
+    public int getValor() {
+        return valor;
+    }
 
-
-    
 }

@@ -14,6 +14,12 @@ public class ContaBancaria {
 
     }
 
+    public ContaBancaria(String nome) {
+        this.nome = nome;
+        this.saldo = 0.0f;
+        this.especial = false;
+    }
+
 
     public String toString(){
         return "Nome = "  + nome + "\nSaldo = " + saldo + "\nEspecial = " + (especial ? " Sim": " Não");

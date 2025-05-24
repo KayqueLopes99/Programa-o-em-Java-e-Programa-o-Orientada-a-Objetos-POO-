@@ -13,9 +13,7 @@ public class Circulo {
         return 2*pi*raio;
 
     }
-
-
-    @Override
+    
     public String toString() {
         return "raio = " + raio;
     }
