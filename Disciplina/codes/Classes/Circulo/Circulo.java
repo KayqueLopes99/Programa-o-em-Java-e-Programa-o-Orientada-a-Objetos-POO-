@@ -1,4 +1,4 @@
-package Disciplina.codes.Circulo;
+package Disciplina.codes.Classes.Circulo;
 
 public class Circulo {
     private double raio;

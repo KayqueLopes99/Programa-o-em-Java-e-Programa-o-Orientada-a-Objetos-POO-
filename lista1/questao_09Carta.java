@@ -12,52 +12,8 @@ public class questao_09Carta {
         
         System.out.println("Digite o número do naipe (1 a 4):");
         int numeroNaipe = leitor.nextInt();
-
-        boolean cartaValida = true;
-        boolean naipeValido = true;
-
-        System.out.print("Carta: ");
-        switch (valorCarta) {
-            case 1:
-                System.out.println("Ás");
-                break;
-            case 11:
-                System.out.println("Valete");
-                break;
-            case 12:
-                System.out.println("Dama");
-                break;
-            case 13:
-                System.out.println("Rei");
-                break;
-            case 2,3,4,5,6,7,8,9,10:
-                System.out.println(valorCarta);
-                break;
-            default:
-                System.out.println("inválida");
-                cartaValida = false;
-        }
-
-        System.out.print("Naipe: ");
-        switch (numeroNaipe) {
-            case 1:
-                System.out.println("ouros");
-                break;
-            case 2:
-                System.out.println("paus");
-                break;
-            case 3:
-                System.out.println("copas");
-                break;
-            case 4:
-                System.out.println("espadas");
-                break;
-            default:
-                System.out.println("inválido");
-                naipeValido = false;
-        }
-
-        if (cartaValida && naipeValido) {
+        
+        if (valorCarta >= 1 && valorCarta <= 13 && numeroNaipe >= 1 && numeroNaipe <= 4) {
             System.out.printf("A carta é: ");
             switch (valorCarta) {
                 case 1:  System.out.print("Ás"); break;
