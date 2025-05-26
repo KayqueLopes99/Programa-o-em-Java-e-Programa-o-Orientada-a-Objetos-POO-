@@ -7,7 +7,6 @@ public class questao_08Vendas {
         Scanner leitor = new Scanner(System.in);
         int codigoSetor;
         double precoProduto;
-
         System.out.println("\033[92m-------- Loja virtual --------\033[0m");
         System.out.println("Informe o setor da Loja que deseja:");
         codigoSetor = leitor.nextInt();

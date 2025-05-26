@@ -14,6 +14,6 @@ d) Uma expressão contendo o operador || é verdadeira se um ou ambos de seus op
 
 e) Para testar para uma série de valores em uma instrução switch, pode-se utilizar um hífen ( - ) entre os valores inicial e final da série em um rótulo case.
 > Falso, o hífen não é usado para representar intervalos em rótulos case, como ex: case 1-10:.
-
+> Justificativa: Cada valor deve ser declarado individualmente.
 f) Listar casos consecutivamente sem instruções entre eles permite aos casos executar o mesmo conjunto de instruções.
 > Verdadeiro.

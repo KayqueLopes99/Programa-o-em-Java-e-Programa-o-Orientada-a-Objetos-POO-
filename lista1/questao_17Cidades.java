@@ -1,5 +1,4 @@
 package lista1;
-
 public class questao_17Cidades {
     public static void main(String[] args) {
        double PopulacaoCidadeA = 7000;
@@ -7,20 +6,11 @@ public class questao_17Cidades {
        int contadorAnos = 0;
 
        while (true) {
-
-        PopulacaoCidadeA = PopulacaoCidadeA + (PopulacaoCidadeA * 0.035);
-        PopulacaoCidadeB = PopulacaoCidadeB + (PopulacaoCidadeB * 0.01);
+        PopulacaoCidadeA += (PopulacaoCidadeA * 0.035);
+        PopulacaoCidadeB += (PopulacaoCidadeB * 0.01);
         contadorAnos++;
 
         if(PopulacaoCidadeA >= PopulacaoCidadeB){
             System.out.println("Anos necessários: " + contadorAnos);
             break;
-        }
-
-        
-        
-       }
-
-
-    }
-}
+}   }   }   }

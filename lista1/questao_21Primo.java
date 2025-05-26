@@ -28,12 +28,10 @@ public class questao_21Primo {
 
         if (divisor == numero) {
             return true;
-
         }
 
         if (numero % divisor == 0) {
             return false;
-
         }
 
         return verificaPrimo(numero, divisor + 1);

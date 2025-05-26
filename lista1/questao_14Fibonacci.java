@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class questao_14Fibonacci {
     public static void main(String[] args) {
         int numeroFibonaci;
-        ;
         Scanner leitor = new Scanner(System.in);
-
         System.out.println("Digite o valor de n (n > 0): ");
         numeroFibonaci = leitor.nextInt();
         if (numeroFibonaci <= 0) {

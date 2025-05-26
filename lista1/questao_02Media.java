@@ -20,10 +20,10 @@ public class questao_02Media {
         leitor.close();
     }
 
-    public static float media(float nota01, float nota02, float nota03){
+    public static float media(float nota01, float nota02, float nota03) {
 
         return (nota01 + nota02 + nota03) / 3;
 
     }
-    
+
 }

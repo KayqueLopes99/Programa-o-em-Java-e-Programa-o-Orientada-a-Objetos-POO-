@@ -17,25 +17,19 @@ public class questao_11Pontos {
         py2 = leitor.nextInt();
 
         if (py1 > py2) {
-            System.out.println("\nO ponto A(" + px1 + ", " + py1 + ") está acima do ponto B(" + px2 + ", " + py2 + ").");
+            System.out.printf("O ponto A(%d, %d) está acima do ponto B(%d, %d).", px1, py1, px2, py2);
         } else if (py1 < py2) {
-            System.out.println("O ponto A(" + px1 + ", " + py1 + ") está abaixo do ponto B(" + px2 + ", " + py2 + ").");
+            System.out.printf("O ponto A(%d, %d) está abaixo do ponto B(%d, %d).", px1, py1, px2, py2);
         } else {
-            System.out.println("O ponto A(" + px1 + ", " + py1 + ") está na mesma altura com o ponto B(" + px2 + ", "
-                    + py2 + ").");
+            System.out.printf("O ponto A(%d, %d) está na mesma altura com o ponto B(%d, %d).", px1, py1, px2, py2);
         }
 
         if (px1 > px2) {
-            System.out.println(
-                    "O ponto A(" + px1 + ", " + py1 + ") está a direita do ponto B(" + px2 + ", " + py2 + ").");
+            System.out.printf("\nO ponto A(%d, %d) está a direita do ponto B(%d, %d).", px1, py1, px2, py2);
         } else if (px1 < px2) {
-            System.out.println(
-                    "O ponto A(" + px1 + ", " + py1 + ") está a esquerda do ponto B(" + px2 + ", " + py2 + ").");
+            System.out.printf("\nO ponto A(%d, %d) está a esquerda do ponto B(%d, %d).", px1, py1, px2, py2);
         } else {
-            System.out.println("O ponto A(" + px1 + ", " + py1 + ") está na mesma largura com o ponto B(" + px2 + ", "
-                    + py2 + ").");
+            System.out.printf("\nO ponto A(%d, %d) está na mesma largura com o ponto B(%d, %d).", px1, py1, px2, py2);
         }
-
         leitor.close();
-    }
-}
+    }}

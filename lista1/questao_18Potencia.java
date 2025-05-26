@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class questao_18Potencia {
     public static void main(String[] args) {
-        int base = 3;
-        int expoente = 4;
+        int base, expoente;
+
         Scanner leitor = new Scanner(System.in);
+        
         System.out.print("Informe a Base: ");
         base = leitor.nextInt();
         System.out.print("Informe o Expoente: ");
@@ -17,7 +18,6 @@ public class questao_18Potencia {
         } else {
             System.out.println("O expoente deve ser maior ou igual a 1.");
         }
-
         leitor.close();
     }
 

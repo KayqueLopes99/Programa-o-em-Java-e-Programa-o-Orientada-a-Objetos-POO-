@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class questao_06Periodo {
     public static void main(String[] args) {
-       int intervaloMinutos;
-       int minutos, dias, horas;
-
+       int intervaloMinutos, minutos, dias, horas;
        Scanner leitor = new Scanner(System.in);
 
        System.out.println("Minutos: ");

@@ -2,7 +2,7 @@ package lista1;
 
 public class questao_16SomaCubos {
     public static void main(String[] args) {
-        for (int numero = 100; numero < 999; numero++) {
+        for (int numero = 100; numero <= 999; numero++) {
 
             int unidade = numero % 10;
             int dezena = (numero / 10) % 10;

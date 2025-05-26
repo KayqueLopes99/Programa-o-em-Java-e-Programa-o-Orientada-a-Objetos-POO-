@@ -12,7 +12,6 @@ public class questao_22Polinomio {
 
         System.out.print("Informe o valor de x: ");
         valorDeX = leitor.nextInt();
-
         int resultado = calcularPolinomio(grau, valorDeX, leitor);
         System.out.println("Resultado do polinômio: " + resultado);
 

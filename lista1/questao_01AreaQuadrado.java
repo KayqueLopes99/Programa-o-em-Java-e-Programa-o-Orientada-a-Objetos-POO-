@@ -10,7 +10,6 @@ public class questao_01AreaQuadrado {
         System.out.print("Lado do Quadrado: ");
         lado = leitor.nextFloat();
 
-
         area = lado * lado;
         System.out.println("Lado do Quadrado: " + lado);
         System.out.println("Área do Quadrado: " + area);

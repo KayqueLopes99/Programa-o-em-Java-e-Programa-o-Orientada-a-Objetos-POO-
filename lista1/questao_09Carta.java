@@ -14,7 +14,7 @@ public class questao_09Carta {
         int numeroNaipe = leitor.nextInt();
         
         if (valorCarta >= 1 && valorCarta <= 13 && numeroNaipe >= 1 && numeroNaipe <= 4) {
-            System.out.printf("A carta é: ");
+            System.out.print("A carta é: ");
             switch (valorCarta) {
                 case 1:  System.out.print("Ás"); break;
                 case 11: System.out.print("Valete"); break;

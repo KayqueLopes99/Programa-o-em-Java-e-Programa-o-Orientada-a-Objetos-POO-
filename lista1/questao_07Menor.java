@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class questao_07Menor{    
     public static void main(String[] args) {
-        int numero1, numero2, numero3;
-        int menorNumero; 
+        int numero1, numero2, numero3, menorNumero; 
+
         Scanner leitor = new Scanner(System.in);
         System.out.print("Informe o primeiro numero: ");
         numero1 = leitor.nextInt();
@@ -18,10 +18,7 @@ public class questao_07Menor{
             menorNumero = numero1;
         }else if (numero2 < numero1 && numero2 < numero3){
             menorNumero = numero2;
-        }else{
-            menorNumero = numero3;
-        }
-
+        }else{ menorNumero = numero3;}
         System.out.println("O menor Numero: " + menorNumero);
 
         leitor.close();
