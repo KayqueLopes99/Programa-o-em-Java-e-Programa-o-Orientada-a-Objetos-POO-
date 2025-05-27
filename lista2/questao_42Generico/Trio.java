@@ -1,5 +1,4 @@
 package lista2.questao_42Generico;
-
 public class Trio <T> {
     private T a, b, c;
 
@@ -28,7 +27,5 @@ public class Trio <T> {
         System.out.println("B: " + b);
         System.out.println("C: " + c);
     }
-
-    
-    
+ 
 }

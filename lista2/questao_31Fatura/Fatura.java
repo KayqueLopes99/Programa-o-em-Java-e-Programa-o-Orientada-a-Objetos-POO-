@@ -13,33 +13,29 @@ que demonstre as capacidades da classe criada.
 
  */
 public class Fatura {
-    int numeroIdentificacao;
-    String descricao;
-    int quantidadeComprada;
-    double precoUnitario;
+    private int numeroIdentificacao;
+    private String descricao;
+    private int quantidadeComprada;
+    private double precoUnitario;
 
-
-    Fatura(int numeroIdentificacao, String descricao, int quantidadeComprada, double precoUnitario) {
+    public Fatura(int numeroIdentificacao, String descricao, int quantidadeComprada, double precoUnitario) {
     
         this.numeroIdentificacao = numeroIdentificacao;
         this.descricao = descricao;
         this.quantidadeComprada = (quantidadeComprada > 0) ? quantidadeComprada : 0;
         this.precoUnitario = (precoUnitario > 0) ? precoUnitario : 0.0;
-
     }
 
-    void imprimeFatura() {
+    public void imprimeFatura() {
         System.out.println("Número de identificação: " + numeroIdentificacao);
         System.out.println("Descrição: " + descricao);
         System.out.println("Quantidade comprada: " + quantidadeComprada);
         System.out.println("Preço unitário: " + precoUnitario);
         System.out.println("Total da fatura: "+ calculaTotal());
 
-
     }
 
-
-    double calculaTotal(){
+    public double calculaTotal(){
         return quantidadeComprada * precoUnitario;
     }
 

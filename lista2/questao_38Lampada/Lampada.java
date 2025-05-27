@@ -10,7 +10,7 @@ public class Lampada {
     }
 
     public void acende() {
-        if (!estadoDaLampada) {
+        if (!estaLigada()) {
             estadoDaLampada = true;
             contadorAcesa.incrementar();
             mostraEstado();
@@ -25,12 +25,11 @@ public class Lampada {
     }
 
     public void mostraEstado() {
-        if (estadoDaLampada == true) {
+        if (estaLigada()) {
             System.out.println("A lâmpada está ligada!");
         } else {
             System.out.println("A lâmpada está desligada!");
         }
-
     }
 
     public boolean estaLigada() {
@@ -40,5 +39,4 @@ public class Lampada {
     public void mostrarTotalDeVezesAcesa() {
         System.out.println("A lâmpada foi acesa " + contadorAcesa.getValor() + " vezes.");
     }
-
 }

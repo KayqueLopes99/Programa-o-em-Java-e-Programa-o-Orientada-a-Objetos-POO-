@@ -2,7 +2,6 @@ package lista2.questao_40Estaticos;
 
 public class MaiorValor {
 
-
     public static int maior(int a, int b) {
         return Math.max(a, b);
     }

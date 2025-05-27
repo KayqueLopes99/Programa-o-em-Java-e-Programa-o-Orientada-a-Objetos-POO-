@@ -18,9 +18,5 @@ public class Contador {
     public void imprimir() {
         System.out.println("Valor atual do contador: " + valor);
     }
-    
-
-
-
-    
+      
 }

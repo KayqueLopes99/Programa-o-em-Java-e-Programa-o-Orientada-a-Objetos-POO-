@@ -1,14 +1,12 @@
 package lista2.questao_41RegistroAcademico;
 
 public class RegistroAcademico {
-    String nome;
-    String matricula;
-    private int codigoCurso;
-    private int percentualDeCobranca;
+    String nome, matricula;
+    private int codigoCurso, percentualDeCobranca;
     public static int numeroDeMatriculas = 0; 
     
     
-    public void inicializaRegistroAcademico(String n, int cc, int pc) {
+    public RegistroAcademico(String n, int cc, int pc) {
         nome = n;
         codigoCurso = cc;
         percentualDeCobranca = pc;

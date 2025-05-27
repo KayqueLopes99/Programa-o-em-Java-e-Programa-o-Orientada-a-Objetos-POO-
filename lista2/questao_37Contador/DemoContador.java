@@ -9,7 +9,6 @@ public class DemoContador {
         contador.incrementar();
         contador.incrementar();
         contador.incrementar();
-
         contador.imprimir();
 
         contador.zerar();

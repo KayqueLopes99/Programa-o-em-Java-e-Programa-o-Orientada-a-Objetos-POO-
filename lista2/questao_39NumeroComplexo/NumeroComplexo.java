@@ -8,7 +8,7 @@ public class NumeroComplexo {
         this.parteReal = parteReal;
         this.parteImaginaria = parteImaginaria;
     }
-
+    
     public NumeroComplexo(double real) {
         this.parteReal = real;
         this.parteImaginaria = 0;

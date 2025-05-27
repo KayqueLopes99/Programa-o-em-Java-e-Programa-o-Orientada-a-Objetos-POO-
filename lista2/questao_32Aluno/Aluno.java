@@ -17,8 +17,7 @@ public class Aluno {
     }
 
     double calculaMedia() {
-        double mediaParcial;
-        mediaParcial = ((2.5 * notaProva1) + (2.5 * notaProva2) + (2 * notaTrabalho)) / 7;
+        double mediaParcial = ((2.5 * notaProva1) + (2.5 * notaProva2) + (2 * notaTrabalho)) / 7;
 
         return mediaParcial;
     }
@@ -28,7 +27,6 @@ public class Aluno {
         if (mp < 3 || mp >= 7) {
             return 0.0;
         }
-            // Calcula a nota necessária no exame final
             return (50 - 6 * mp) / 4;
     }
 

@@ -1,8 +1,8 @@
 ## 10. Determine se cada uma das seguintes alternativas é verdadeira ou falsa. Se falsa, explique por quê.
 
 a) O caso default é requerido na instrução de seleção switch.  
-> Falso, pode-se fazer sem usar o comando.   
-
+> Falso, pode-se fazer sem usar o comando. pois o caso default é opcional. 
+> justificativa : 
 b) A instrução break é requerida no último caso de uma instrução de seleção switch.  
 > Falso, o break é opcional no último caso, pois não há mais casos a serem tratados após ele.
 
