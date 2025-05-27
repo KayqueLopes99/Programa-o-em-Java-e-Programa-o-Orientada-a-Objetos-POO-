@@ -2,7 +2,7 @@ package lista2.questao_42Generico;
 
 public class DemoTrio {
     public static void main(String[] args) {
-        Trio <String> trioStr = new Trio<>("Java", "Python", "Java");
+        Trio <String> trioStr = new Trio<> ("Java", "Python", "Java");
         trioStr.imprimir();
         
         Trio <Integer> trioInt = new Trio<>(1, 2, 1);

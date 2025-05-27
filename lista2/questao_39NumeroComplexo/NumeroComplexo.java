@@ -25,7 +25,7 @@ public class NumeroComplexo {
         } else if (parteReal == 0) {
             return parteImaginaria + "i";
         } else if (parteImaginaria < 0) {
-            return parteReal + " - " + (parteImaginaria * -1);
+            return parteReal + " - " + (parteImaginaria * -1) + "i";
         } else {
             return parteReal + " + " + parteImaginaria + "i";
 
