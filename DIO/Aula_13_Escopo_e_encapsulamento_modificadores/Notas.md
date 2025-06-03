@@ -115,6 +115,7 @@ modificador-de-acesso tipo-de-retorno nome-do-metodo(argumentos);
 | `private`   | Somente a **mesma classe**                                | `private int idade;`                   |
 | `protected` | Mesma classe **e subclasses (herança)**                   | `protected void ajustar()`             |
 
+- protected: Permite acesso a subclasses, mesmo que estejam em pacotes diferentes.
 
 ---
 
