@@ -22,6 +22,21 @@ public class ContaBancaria {
         return resposta;
     }
 
+    public void transacao(float valor){
+        if (saldoFinal + valor >=  0) {
+            saldoFinal += valor;
+            translacoes.add(valor);          
+        }
+        else{
+            System.out.println("Saldo insuficiente");
+        }
+
+
+
+    }
+
+
+
 
 
     
