@@ -17,6 +17,7 @@ public class RegistroAcademico {
     public double calculaMensalidade(){
         return 100.0*codigoCurso *(percentualDeCobranca/100.0);
     }
+    
 
 
 }
