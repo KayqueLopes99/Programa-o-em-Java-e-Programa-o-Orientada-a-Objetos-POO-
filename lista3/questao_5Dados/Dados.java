@@ -12,11 +12,9 @@ public class Dados {
             int dado1 = 1 + random.nextInt(6);
             int dado2 = 1 + random.nextInt(6);
             int somaDados = dado1 + dado2;
-
-            if (somaDados >= 2 && somaDados <= 12){
-                frequenciaSomas[somaDados]++;
-                // vai ter um contador individual para cada uma dessas somas: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 e 12. 
-            }
+            frequenciaSomas[somaDados]++;
+            // vai ter um contador individual para cada uma dessas somas: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 e 12. 
+            
         }
 
         System.out.println("Soma\tFrequência");
@@ -24,8 +22,6 @@ public class Dados {
         for (int soma = 2; soma <= 12; soma++) {
         
             System.out.printf("%d\t%,d\n", soma, frequenciaSomas[soma]);
-
-
     }
     
 }
