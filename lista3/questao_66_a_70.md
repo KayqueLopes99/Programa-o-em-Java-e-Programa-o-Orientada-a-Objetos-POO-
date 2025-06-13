@@ -112,7 +112,7 @@ No contexto da programação orientada a objetos, qual conceito permite que uma 
 > **Gabarito: (D) Herança**
 ---
 
-- Resumo:
+## Resumo:
 - 66 -> V F F -> (E) Apenas I é verdadeira. 
 - 67 -> F V F V -> (B) II E IV.
 - 68 -> (E) U e associar a uma variável da classe Q.

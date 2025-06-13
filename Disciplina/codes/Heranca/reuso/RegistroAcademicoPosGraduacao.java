@@ -16,7 +16,8 @@ public class RegistroAcademicoPosGraduacao {
         this.tituloTese = tituloTese;
         this.orientador = orientador;
     }
-    
+
+    @Override
     public String toString() {
         return academico.toString() + ", tituloTese=" + tituloTese + ", orientador="+ orientador;
     }
