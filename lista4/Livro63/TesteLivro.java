@@ -3,9 +3,13 @@ package lista4.Livro63;
 public class TesteLivro {
 
     public static void main(String[] args){
-    LivroLivraria livroVenda = new LivroLivraria("Sitio do pica pau amarelo", "Monteiro Lobato", 1920, 12, 15.00);
+    Livro livro = new Livro("O Pequeno Príncipe", "Antoine", 1943);
+    System.out.println(livro);
 
+
+    LivroLivraria livroVenda = new LivroLivraria("Sitio do pica pau amarelo", "Monteiro Lobato", 1920, 12, 15.00);
     System.out.println(livroVenda);
+
 
     LivroBiblioteca livroBiblioteca =  new LivroBiblioteca("Dom Casmurro", "Machado de Assis", 1899, "romance", true);
     System.out.println(livroBiblioteca);
