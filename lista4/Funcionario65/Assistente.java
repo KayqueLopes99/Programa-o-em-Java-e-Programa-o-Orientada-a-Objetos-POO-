@@ -13,6 +13,10 @@ public class Assistente extends Funcionario{
         return matricula;
     }
 
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
     @Override
     public String toString(){
         return super.toString() + " ," + "Matrícula: "+ getMatricula();

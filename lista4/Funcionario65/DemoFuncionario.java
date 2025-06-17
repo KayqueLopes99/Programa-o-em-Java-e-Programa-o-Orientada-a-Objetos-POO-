@@ -6,6 +6,7 @@ public class DemoFuncionario {
         System.out.println(funcionario);
 
         Assistente assistente = new Assistente("Maria", 2500, "12345");
+        assistente.setMatricula("54321");
         assistente.aumentaSalario(200);
         System.out.println(assistente);
 
