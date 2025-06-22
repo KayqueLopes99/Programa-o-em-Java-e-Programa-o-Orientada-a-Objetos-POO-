@@ -19,11 +19,19 @@ public class LivroLivraria extends Livro{
         return estoque;
     }
 
+    public void vender(int quantidade) {
+        if (quantidade <= this.estoque) {
+            this.estoque -= quantidade;
+            System.out.println("Venda do livro realizada com sucesso.");
+        } else {
+            System.out.println("Estoque insuficiente para vender o livro.");
+        }
+    }
+
 
     @Override
     public String toString() {
-        return super.toString() + " Preço: " + getPreco() + 
-                " Estoque: " + getEstoque();
+        return super.toString() + " Preço: " + getPreco() +  " Estoque: " + getEstoque();
     }
     
 }

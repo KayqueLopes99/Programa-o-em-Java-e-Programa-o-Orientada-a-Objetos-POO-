@@ -9,16 +9,9 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public int getIdade() {
-        return idade;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
     @Override
     public String toString() {
-        return  "Nome: " + getNome() + " Idade: " + getIdade();
+        return  "Pessoa: Nome: '" + this.nome +
+               ", Idade: " + this.idade + " anos";
     }
 }

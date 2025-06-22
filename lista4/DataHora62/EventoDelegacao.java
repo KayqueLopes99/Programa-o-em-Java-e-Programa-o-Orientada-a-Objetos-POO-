@@ -18,15 +18,9 @@ public class EventoDelegacao {
         this.evento = evento;
     }
 
-    public String getEvento() {
-        return evento;
-    }
-    public DataHora getDataHora() {
-        return dataHora;
-    }
 
     @Override
     public String toString() {
-        return "Evento: " + getEvento() + "em" + getDataHora();
+        return "Evento (Delegação): " + this.evento + " em " + this.dataHora.toString();
     }
 }

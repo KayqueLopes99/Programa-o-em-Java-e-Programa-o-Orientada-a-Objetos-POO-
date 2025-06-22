@@ -15,30 +15,9 @@ public class DataHora {
         this.minuto = minuto;
     }
 
-    public int getDia() {
-        return dia;
-    }
-
-    public int getMes() {
-        return mes;
-    }
-
-    public int getAno() {
-        return ano;
-    }
-
-    public int getHora() {
-        return hora;
-    }
-
-    public int getMinuto() {
-        return minuto;
-    }
-
-    
     @Override
     public String toString() {
-        return getAno() + "-" + getMes() + "-" + getDia() + " " + getHora() + ":" + getMinuto();
+        return this.dia + "-" + this.mes + "-" + this.ano + " " + this.hora + ":" + this.minuto;
     }
 }
 

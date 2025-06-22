@@ -9,13 +9,11 @@ public class Politico extends Pessoa{
         this.partido = partido;
     }
     
-    public String getPartido() {
-        return partido;
-    }
-
+ 
     @Override
     public String toString() {
-        return super.toString() + " Partido: " + getPartido();
+            return super.toString() + " - Político: Partido: " + this.partido;
+
     }
 
 }

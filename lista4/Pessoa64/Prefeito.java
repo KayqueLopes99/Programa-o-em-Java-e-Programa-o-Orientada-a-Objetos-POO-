@@ -8,12 +8,8 @@ public class Prefeito extends Politico{
         this.cidade = cidade;
     }
 
-    public String getCidade() {
-        return cidade;
-    }
-
     @Override
     public String toString() {
-        return super.toString() + ", Cidade Governada: " + getCidade();
+        return super.toString() + " - Prefeito: Cidade: " + this.cidade;
     }
 }

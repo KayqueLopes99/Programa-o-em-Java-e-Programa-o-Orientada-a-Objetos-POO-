@@ -33,7 +33,7 @@ public class Computador extends Equipamento{
     @Override // Não tem ;
     public String toString() {
 
-        return super.toString() + " Memória Ram: " + getMemoriaRam() + " Sistema Operacional: " + getSistemaOperacional();
+        return super.toString() + " Memória Ram: " + this.memoriaRam + " Sistema Operacional: " + this.sistemaOperacional;
     }
     
 }

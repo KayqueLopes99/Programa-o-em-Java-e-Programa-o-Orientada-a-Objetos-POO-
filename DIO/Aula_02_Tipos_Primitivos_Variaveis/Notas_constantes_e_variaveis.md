@@ -34,3 +34,16 @@ public class VariaveisConstantes{
 }
 
 ```
+### Palavra-chave `final` em Java
+
+No Java, a palavra-chave `final` é utilizada para indicar que um valor não pode ser alterado após ser atribuído. Quando aplicada a variáveis, transforma-as em constantes, impedindo que recebam um novo valor posteriormente. Também pode ser usada em métodos (impedindo que sejam sobrescritos) e em classes (impedindo que sejam estendidas).
+
+### Exemplo 
+
+```java
+final int DIAS_DA_SEMANA = 7;
+DIAS_DA_SEMANA = 8; // Isso causará um erro de compilação, pois o valor não pode ser alterado
+```
+
+No exemplo acima, a variável `DIAS_DA_SEMANA` é declarada como constante usando `final`. Qualquer tentativa de modificar seu valor resultará em erro.
+- 

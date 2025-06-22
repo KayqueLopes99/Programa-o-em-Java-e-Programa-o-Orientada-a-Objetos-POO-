@@ -6,7 +6,10 @@ public class DemoPessoa {
 
         Governador governador = new Governador("Maria", 35, "Partido y", "São Paulo");
 
+        Politico politico = new Politico("Kaio", 35, "Vermelho");
+
         System.out.println(prefeito);
         System.out.println(governador);
+        System.out.println(politico);
     }
 }

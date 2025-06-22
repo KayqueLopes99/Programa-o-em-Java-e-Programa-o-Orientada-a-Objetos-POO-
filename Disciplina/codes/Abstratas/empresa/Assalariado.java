@@ -15,7 +15,6 @@ public class Assalariado extends Empregado{
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return super.toString() + " Salario: " + salario;
     }
 }

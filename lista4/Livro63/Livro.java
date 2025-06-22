@@ -1,9 +1,9 @@
 package lista4.Livro63;
 
 public class Livro {
-    String titulo;
-    String autor;
-    int ano;
+    private String titulo;
+    private String autor;
+    private int ano;
 
     public Livro(String titulo, String autor, int ano) {
         this.titulo = titulo;
