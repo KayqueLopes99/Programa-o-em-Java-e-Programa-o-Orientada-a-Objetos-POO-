@@ -13,7 +13,6 @@ public class RemoveCores {
         LinkedList<String> listaRemover = new LinkedList<>(Arrays.asList(
                 "azul", "vermelho", "verde"
         ));
-
         System.out.println(listaCores);
         remove(listaCores, listaRemover);
         System.out.println(listaCores);
