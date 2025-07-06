@@ -35,3 +35,14 @@ public class ExemploPilha {
     }
 }
 ```
+
+## Obs:
+-  *Metodos*:   
+- addFirst : adiciona um elemento no início da lista.
+- addLast  : adiciona um elemento no final da lista.
+- removeFirst : remove o primeiro elemento da lista.
+- removeLast : remove o último elemento da lista.
+- Estes acima devem ser implementados na estrutura de dados `LinkedList` como pilha.
+
+- Pilha segue o princípio LIFO (Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido.
+

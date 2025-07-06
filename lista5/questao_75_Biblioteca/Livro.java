@@ -23,9 +23,9 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Título do livro: " + titulo +
-               ", Autor: " + autor +
-               ", Número de páginas: " + numeroDePaginas +
-               ", Ano: " + anoDaEdicao;
+        return "Título do livro: " + this.titulo +
+               ", Autor: " + this.autor +
+               ", Número de páginas: " + this.numeroDePaginas +
+               ", Ano: " + this.anoDaEdicao;
     }
 }

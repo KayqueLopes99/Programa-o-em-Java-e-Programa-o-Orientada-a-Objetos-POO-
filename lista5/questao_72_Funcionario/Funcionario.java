@@ -5,33 +5,38 @@ public class Funcionario {
 
     private final String funcionarioId;
     private String nome;
+    private String cargo;
+    private String departamento;
     private double salarioPorHora;
-    private double horasTrabalhadas;
+    private int horasTrabalhadas;
 
 
-
-    public Funcionario(String nome, double salarioPorHora){
+    public Funcionario(String nome, String cargo, String departamento, double salarioPorHora){
         this.funcionarioId = "ID" + proximoId++;
         this.nome = nome;
+        this.cargo = cargo;
+        this.departamento = departamento;
         this.salarioPorHora = salarioPorHora; 
         this.horasTrabalhadas = 0;
     }
 
     public Funcionario(String nome){
-        this(nome, 2.0);
+        this(nome, "Funcionario", "Geral", 2.0);
     }
 
     public String getNome() {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public double getSalarioPorHora() {
         return salarioPorHora;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    
 
     public void setSalarioPorHora(double novoSalario) {
     if (novoSalario > this.salarioPorHora) {
@@ -44,7 +49,11 @@ public class Funcionario {
     public void registrarHoras(double horas) {
         if (horas > 0) {
             this.horasTrabalhadas += horas;
+            System.out.println(horas + " horas registradas para " + this.nome);
         }
+        else { 
+        System.out.println("Erro: A quantidade de horas registradas deve ser positiva.");
+    }
     }
 
     public double calcularSalario() {
@@ -55,9 +64,11 @@ public class Funcionario {
     @Override
     public String toString() {
         return "Funcionário ID: " + funcionarioId +
-               ", Nome: " + nome +
-               ", Salário por Hora: R$" + salarioPorHora +
-               ", Horas Trabalhadas: " + horasTrabalhadas +
-               ", Salário Mensal: R$" + calcularSalario() + "]";
+               ", Nome: " + this.nome +
+               ", Salário por Hora: R$" + this.salarioPorHora +
+               ", Horas Trabalhadas: " + this.horasTrabalhadas +
+               ", Salário Mensal: R$" + calcularSalario() +
+                ", Cargo: " + this.cargo +
+                ", Departamento: " + this.departamento;
     }
 }

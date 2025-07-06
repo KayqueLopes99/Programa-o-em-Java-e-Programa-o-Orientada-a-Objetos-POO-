@@ -117,4 +117,4 @@ No contexto da programação orientada a objetos, qual conceito permite que uma 
 - 67 -> F V F V -> (B) II E IV.
 - 68 -> (E) U e associar a uma variável da classe Q.
 - 69 ->  V – F – V. (B)
-- 70 -> (D)
+- 70 -> (D) Herança

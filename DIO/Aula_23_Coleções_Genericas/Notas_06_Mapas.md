@@ -13,6 +13,9 @@ import java.util.Map;
 - TreeMaps armazenam elementos em árvores
 - implementação de SortedMap (mantém as chaves ordenadas)
 
+- **TreeMap** é uma implementação de SortedMap que mantém as chaves ordenadas de acordo com a ordem natural ou com um comparador fornecido.
+
+
 ### Métodos:
 - `put(chave, valor)`: Adiciona um par chave-valor ao mapa.
 - `get(chave)`: Retorna o valor associado a uma chave específica.
