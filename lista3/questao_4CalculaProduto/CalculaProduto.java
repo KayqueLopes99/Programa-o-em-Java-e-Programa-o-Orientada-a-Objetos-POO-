@@ -2,8 +2,6 @@ package lista3.questao_4CalculaProduto;
 
 public class CalculaProduto {
 
-
-
     public int produto(int... numeros){
 
         if (numeros.length == 0){

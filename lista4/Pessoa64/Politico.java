@@ -12,7 +12,7 @@ public class Politico extends Pessoa{
  
     @Override
     public String toString() {
-            return super.toString() + " - Político: Partido: " + this.partido;
+            return " [Político]: Partido: " + this.partido + super.toString();
 
     }
 

@@ -19,7 +19,7 @@ public class Agenda {
         boolean encontrado = false;
         for (EntradaEmAgenda dadosCadastrados : this.compromissos) {
             if (dadosCadastrados.ehNoDia(dia, mes, ano)) {
-                System.out.print(dadosCadastrados.toString());
+                System.out.print(dadosCadastrados);
                 encontrado = true;
             } 
         }

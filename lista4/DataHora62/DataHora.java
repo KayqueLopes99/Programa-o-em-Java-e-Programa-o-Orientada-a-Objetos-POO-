@@ -1,11 +1,7 @@
 package lista4.DataHora62;
 
 public class DataHora {
-    private int dia;
-    private int mes;
-    private int ano;
-    private int hora;
-    private int minuto;
+    private int dia, mes, ano, hora, minuto;
 
     public DataHora(int dia, int mes, int ano, int hora, int minuto) {
         this.dia = dia;
@@ -19,5 +15,7 @@ public class DataHora {
     public String toString() {
         return this.dia + "-" + this.mes + "-" + this.ano + " " + this.hora + ":" + this.minuto;
     }
+
+    
 }
 

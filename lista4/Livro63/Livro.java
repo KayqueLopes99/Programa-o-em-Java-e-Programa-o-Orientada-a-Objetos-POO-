@@ -2,31 +2,22 @@ package lista4.Livro63;
 
 public class Livro {
     private String titulo;
+    private String editora;
     private String autor;
     private int ano;
 
-    public Livro(String titulo, String autor, int ano) {
+    public Livro(String titulo, String editora, String autor, int ano) {
         this.titulo = titulo;
+        this.editora = editora;
         this.autor = autor;
         this.ano = ano;
     }
 
-    public String getAutor() {
-        return autor;
-    }
-
-    public int getAno() {
-        return ano;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
     @Override
     public String toString() {
-        return "Livro: Título " + getTitulo() +
-                " Autor: " + getAutor() +
-                " Ano: " + getAno();
+        return "Livro: Título " + this.titulo +
+                " Autor: " + this.autor +
+                " Editora: " + this.editora +
+                " Ano: " + this.ano;
     }
 }

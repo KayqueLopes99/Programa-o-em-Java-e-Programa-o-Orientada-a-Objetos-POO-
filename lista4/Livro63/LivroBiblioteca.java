@@ -1,38 +1,31 @@
 package lista4.Livro63;
-
 public class LivroBiblioteca extends Livro {
-    private String genero;
-    private boolean emprestado;
-
-    public LivroBiblioteca(String titulo, String autor, int ano, String genero) {
-        super(titulo, autor, ano);
-        this.genero = genero;
-        this.emprestado = false;
-    }
-
-    public String getGenero() {
-        return genero;
-    }
+    private String localizacao;
+    private boolean estaEmprestado;
     
+    public LivroBiblioteca(String titulo, String editora,  String autor, int ano, String localizacao) {
+        super(titulo, editora, autor, ano);
+        this.localizacao = localizacao;
+        this.estaEmprestado = false;
+    }
+
     public void emprestar() {
-        if (!this.emprestado) {
-            this.emprestado = true;
+        if (!this.estaEmprestado) {
+            this.estaEmprestado = true;
             System.out.println("O livro foi emprestado.");
         } else {
-            System.out.println("O livro já se encontra emprestado.");
+            System.out.println("Livro já emprestado.");
         }
     }
 
     public void devolver() {
-        this.emprestado = false;
+        this.estaEmprestado = false;
         System.out.println("O livro foi devolvido.");
     }
-
-
     @Override
     public String toString() {
-        return super.toString() + 
-                " Gênero: " + getGenero() +
-                " Emprestado: " + (emprestado ? "Sim" : "Não");
+        return "[BIBLIOTECA] " + super.toString() + 
+                " Localização: " + this.localizacao +
+                " Emprestado: " + (this.estaEmprestado ? "Sim" : "Não");
     }
 }

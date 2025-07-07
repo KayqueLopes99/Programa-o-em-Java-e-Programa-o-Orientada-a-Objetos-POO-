@@ -10,6 +10,6 @@ public class Prefeito extends Politico{
 
     @Override
     public String toString() {
-        return super.toString() + " - Prefeito: Cidade: " + this.cidade;
+        return" [Prefeito] Cidade: " + this.cidade + super.toString();
     }
 }

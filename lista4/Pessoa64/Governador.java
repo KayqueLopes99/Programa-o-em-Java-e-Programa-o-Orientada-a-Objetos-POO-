@@ -11,7 +11,7 @@ public class Governador extends Politico {
 
     @Override
     public String toString() {
-        return super.toString() + " - Governador: Estado: " + this.estado;
+        return "[Governador] Estado: " + this.estado + super.toString();
     }
 }
 

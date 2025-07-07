@@ -60,6 +60,7 @@ public class Desenho {
 >Nenhum preparo necessário.
 
 - 87) > (E) encapsulamento e polimorfismo.
+
 - 88) > (B) em todas as três classes, sendo possível, nesse caso, que a função `getDesconto` da classe Cliente seja abstrata. 
 - 89) > (D) Polimorfismo, pois o método é definido na classe base, mas o comportamento é determinado pelas subclasses.
 

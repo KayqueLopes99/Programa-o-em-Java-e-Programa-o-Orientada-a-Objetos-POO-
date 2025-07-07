@@ -2,11 +2,12 @@ package lista5.questao_72_Funcionario;
 
 public class DemoFuncionario {
     public static void main(String[] args) {
-        Funcionario funcionario1 = new Funcionario("Lucas", "Desenvolvedor", "TI", 1500);
+        
         Funcionario funcionario2 = new Funcionario("Pedro");
+        Funcionario funcionario1 = new Funcionario("Lucas", "TI", 1500);
+        System.out.println(funcionario2);
 
-        System.out.println(funcionario1.getNome());
-        funcionario1.setNome("Kayque");
+
 
         System.out.println(funcionario1.getSalarioPorHora());
 

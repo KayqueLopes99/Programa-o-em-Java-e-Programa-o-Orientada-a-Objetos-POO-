@@ -27,7 +27,7 @@ public class Equipamento {
 
     @Override
     public String toString() {
-        return "Nome: " + getNome() + ", marca: " + getMarca();
+        return "Nome: " + this.nome + ", marca: " + this.nome;
     }
 
 }

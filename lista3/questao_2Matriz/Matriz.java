@@ -1,7 +1,7 @@
 package lista3.questao_2Matriz;
 
 public class Matriz {
-    float matriz[][];
+    private float matriz[][];
 
     public Matriz(float elemento1, float elemento2, float elemento3, float elemento4) {
         this.matriz = new float[2][2];

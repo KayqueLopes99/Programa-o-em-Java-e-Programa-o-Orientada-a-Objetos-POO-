@@ -14,7 +14,7 @@ public class Dados {
             int somaDados = dado1 + dado2;
             frequenciaSomas[somaDados]++;
             // vai ter um contador individual para cada uma dessas somas: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 e 12. 
-            
+    
         }
 
         System.out.println("Soma\tFrequência");

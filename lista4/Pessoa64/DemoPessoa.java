@@ -5,7 +5,7 @@ public class DemoPessoa {
         Prefeito prefeito = new Prefeito("Rai", 45, "Partido x", "Natal");
 
         Governador governador = new Governador("Maria", 35, "Partido y", "São Paulo");
-
+        
         Politico politico = new Politico("Kaio", 35, "Vermelho");
 
         System.out.println(prefeito);

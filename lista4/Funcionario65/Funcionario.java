@@ -9,24 +9,20 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public void aumentaSalario(double valor) {
-        this.salario += valor;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public double getSalario() {
-        return salario;
+    public void aumentaSalario(double aumento) {
+        this.salario += aumento;
     }
 
     public double ganhoAtual(){
         return salario * 12 + salario;
     }
 
+    public double getSalario() {
+        return salario;
+    }
+
     @Override
     public String toString() {
-        return "Funcionario: " + " nome: " + getNome() + ", salario: " + getSalario() +  ", ganho atual: " + ganhoAtual();
+        return "[Funcionario] nome: " + this.nome + ", salário: R$" + this.salario +  " ganho atual: " + ganhoAtual();
     }
 }

@@ -1,8 +1,8 @@
 package lista3.questao_1EntradaEmAgenda;
 
 public class EntradaEmAgenda {
-    int dia, mes, ano;
-    String hora, assunto;
+    private int dia, mes, ano;
+    private String hora, assunto;
 
     public EntradaEmAgenda(int dia, int mes, int ano, String hora, String assunto) {
         this.dia = dia;
@@ -21,16 +21,8 @@ public class EntradaEmAgenda {
     } 
 
 
-    public boolean ehNoDia(int dia, int mes, int ano){
-    return dia == this.dia && mes == this.mes && ano == this.ano;
+    public boolean ehNoDia(int dia, int mes, int ano) {
+        return this.dia == dia && this.mes == mes && this.ano == ano;
     }
-
-
-
-
-
-
-
-
-    
+  
 }
