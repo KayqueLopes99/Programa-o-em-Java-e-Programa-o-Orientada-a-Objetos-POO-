@@ -1,4 +1,4 @@
-package DIO.Code;
+package Udemy.Code;
 
 public class EstruturasCondicionais2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DIO.Code;
+package Udemy.Code;
 
 public class HelloWorld_Dev {
     public static void main(String[] args) {
