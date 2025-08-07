@@ -12,3 +12,5 @@
 
 - Código Limpo! *EVITE COMENTÁRIOS!*
 - Usabilidade do Javadoc nos métodos públicos -> para visualização da função. 
+
+## Autoendentação: CTRL + SHIFT + F

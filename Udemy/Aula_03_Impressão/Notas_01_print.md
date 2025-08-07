@@ -1,4 +1,4 @@
-## 📤 Impressão de Dados no Java (`System.out` e `System.err`)
+## Impressão de Dados no Java (`System.out` e `System.err`)
 - A **impressão de dados** no console é feita com os objetos **`System.out`** e **`System.err`**.
 
 ###  `System.out` – Saída padrão (standard output)
@@ -45,10 +45,6 @@ if (idade < 0) {
 ```
 
 
-Claro, José! Aqui está uma **tabela completa dos tipos primitivos em Java**, com foco em **`%tipo`** usados em **formatação/saída de dados**, especialmente com `System.out.printf()` ou `String.format()`.
-
----
-
 ## Especificadores de formato (`%`) para o printf
 | Tipo Primitivo | Especificador (`%`) | Descrição                                           | Exemplo de Uso                         |
 | -------------- | ------------------- | --------------------------------------------------- | -------------------------------------- |
@@ -59,8 +55,25 @@ Claro, José! Aqui está uma **tabela completa dos tipos primitivos em Java**, c
 | `char`         | `%c`                | Caractere único                                     | `System.out.printf("%c", 'A');`        |
 | `boolean`      | `%b`                | Valor lógico (true/false)                           | `System.out.printf("%b", true);`       |
 | `String`       | `%s`                | Texto (sequência de caracteres)                     | `System.out.printf("%s", "Olá");`      |
+| `String`       | `%n`                | Nova linha (independente do sistema operacional)    | `System.out.printf("Linha1%nLinha2");` |
 
-##  Caracteres de escape: \n e \t 
+
+
+###  Caracteres de escape: \n e \t 
 - \n : Nova linha (line break)
 - \t : Tabulação horizontal (tab)
 - Insere um espaço horizontal 4 ou 8.
+
+### `+` Operador de Adição
+- Usado para **concatenação de Strings**.
+
+```java
+String nome = "José";
+String saudacao = "Olá " + nome; // concatenação → "Olá José"
+```
+
+## **Locale.setDefault(Locale.US);**:
+- Usado para definir o **formato de números decimais** com ponto (.) ao invés de vírgula (,).
+```java
+import java.util.Locale;
+```

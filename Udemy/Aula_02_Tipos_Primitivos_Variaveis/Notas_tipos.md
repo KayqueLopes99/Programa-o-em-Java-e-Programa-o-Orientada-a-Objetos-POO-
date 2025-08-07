@@ -18,14 +18,17 @@
 - São usados para armazenar números sem casas decimais, positivos ou negativos.
 ### 1. `byte`
 - Usado quando sabemos que os valores estarão dentro de um intervalo pequeno.
+- -128 a 127.
 
 ### 2. `short`
 - Menos usado que `int`, mas útil quando o espaço de memória é restrito.
+- -32768 a 32767.
 
 ### 3. `int`
 - Inteiro padrão em Java.
 - Usado para armazenar números inteiros comuns.
 - Tipo mais utilizado para valores inteiros.
+-  -2147483648 a 2147483647.
 - Exemplo:
 ```java
   int populacao = 210000000;

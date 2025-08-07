@@ -1,6 +1,6 @@
 ## Estruturas de Repetição em Java: `while` e `do-while`
 - As **estruturas de repetição** são usadas quando precisamos **repetir um bloco de código várias vezes**, dependendo de uma **condição lógica**.
-
+- *Testa 1 condição antes de executar o bloco de código*.
 
 ## 1. Estrutura `while`
 - A estrutura `while` repete o código **enquanto** a condição for verdadeira.
@@ -57,7 +57,9 @@ public class ExemploMenu {
 
 ## 2. Estrutura `do-while`
 - O bloco de código **é executado pelo menos uma vez**, **antes** de testar a condição.
-- 
+- 1* testa o bloco de código e depois verifica a condição.
+- 2* Se a condição for verdadeira, o bloco é executado novamente.
+- 3* Se a condição for falsa, o loop para.
 - Sintaxe:
 
 ```java

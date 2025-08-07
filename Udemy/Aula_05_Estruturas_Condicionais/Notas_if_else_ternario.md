@@ -1,6 +1,7 @@
 ## Estrutura condicional If e Else
 - Permitem que o programa tome decisões lógicas com base em condições booleanas (true ou false). São fundamentais para controlar o fluxo de execução do código.
 - Use `{}` para delimitar os blocos
+
 ### `if` (se)
 - O bloco `if` **executa um código somente se a condição for verdadeira** (`true`).
 - Se desejar que todas as condições sejam verificadas, use vários ifs. 
@@ -83,6 +84,21 @@ if (condicao1) {
     }
 }
 ```
+## Encadeamento de estruturas condicionais
+``` java
+if (condicao1) {
+    // código se condicao1 for verdadeira
+} else if (condicao2) {
+    // código se condicao2 for verdadeira
+} else if (condicao3) {
+    // código se condicao3 for verdadeira
+} else {
+    // código se nenhuma das condições anteriores for verdadeira
+}
+```
+
+
+
 ## O Operador Ternário
 - Usado como uma forma curta de `if-else`.
 - Sintaxe:
@@ -98,5 +114,3 @@ int idade = 20;
 String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
 
 
-
----

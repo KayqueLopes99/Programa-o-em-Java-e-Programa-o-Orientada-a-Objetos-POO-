@@ -1,6 +1,6 @@
-## 01. Operadores de Atribuição
+## 01. Operadores de Atribuição (Processamento de Dados)
 - Usados para **atribuir valores** a variáveis.
-
+> <variável> = <expressão>;
 | Operador | Significado          | Exemplo  |
 | -------- | -------------------- | -------- |
 | `=`      | Atribuição simples   | `x = 10` |

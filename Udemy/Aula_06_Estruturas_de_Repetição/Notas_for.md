@@ -1,4 +1,4 @@
-## Contadores
+\[ ## Contadores
 - Variáveis que recebem um valor inicial e são modificadas a cada iteração de uma estrutura de repetição.
 - Contadores podem ser variáveis de qualquer tipo numérico.
 + Estas variáveis devem:
@@ -22,7 +22,7 @@ for (inicialização; condição; incremento/decremento) {
 | ----------------- | ------------------------------------------------ | --------------------------- |
 | **inicialização** | Define a variável de controle                    | `int i = 0`                 |
 | **condição**      | Condição que precisa ser verdadeira para repetir | `i < 5`                     |
-| **incremento**    | Modo como a variável muda a cada repetição       | `i++` (soma 1 a cada volta) |
+| **incremento**    | Modo como a variável muda a cada repetição       | `i++` (soma 1 a *cada volta*)|
 
 - Exemplo 
 
@@ -42,6 +42,12 @@ for (int i = 5; i > 0; i--) {
     System.out.println("Contando: " + i);
 }
 ```
+- 1* A variável `i` é inicializada com 5.
+- 2* Enquanto `i` for maior que 0, o bloco de código é executado.
+- 3* Após cada iteração, `i` é decrementado em 1.
+- Quando `i` chega a 0, o loop para.
+- Repete o processo até que a condição seja falsa.
+
+
 
 ---
-

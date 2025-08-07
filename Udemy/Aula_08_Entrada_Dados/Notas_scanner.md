@@ -33,6 +33,8 @@ nome_da_entrada.close(); // sempre feche o scanner no final
 | 10 | `useDelimiter()`  | `Scanner`      | Define um delimitador personalizado.     | `entrada.useDelimiter(",");`             |
 | 11 | `close()`         | `void`         | Fecha o Scanner. **Importante!**         | `entrada.close();`                       |
 ---
+
+> nextLine: Para ler um texto ATÉ A QUEBRA DE LINHA
 ### Exemplo:
 
 ```java
