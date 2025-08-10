@@ -2,7 +2,7 @@ package Udemy.Code.Array_arraylist;
 
 import java.util.Scanner;
 
-public class ArrayAlturas {
+public class ArrayHeigths {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);

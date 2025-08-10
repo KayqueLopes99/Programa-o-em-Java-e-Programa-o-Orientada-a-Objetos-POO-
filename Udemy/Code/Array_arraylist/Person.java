@@ -11,12 +11,23 @@ public class Person {
         this.height = height;
     }
 
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.height = 0.0;
+    }
+
+
     public double getHeight() {
         return height;
     }
 
     public int getAge() {
         return age;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String toString() {
