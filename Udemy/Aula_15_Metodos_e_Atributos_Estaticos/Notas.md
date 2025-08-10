@@ -1,11 +1,13 @@
 ## Atributos estáticos (`static`)
+> Zera a necessidade de instanciar um objeto. 
+> • São membros que fazem sentido independentemente de objetos. Não precisam de objeto para serem chamados. São chamados a partir do próprio nome da classe.
 * **Compartilhados por todas as instâncias** da classe.
 * Existe **apenas um único valor armazenado**, **não importa quantos objetos sejam criados**.
 * Se uma instância modificar esse valor, **todas as outras veem a modificação**.
 * É como uma variável **global da classe**.
 
 - Sintaxe:
-
+- Normalmente coloca `final` para constantes.
 ```java
 public class Exemplo {
     public static int contador; // atributo estático

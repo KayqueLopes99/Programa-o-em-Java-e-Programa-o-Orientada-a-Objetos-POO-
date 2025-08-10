@@ -1,14 +1,13 @@
 ## Palavra-chave `this` em Java
-
 - No Java, **cada instância de uma classe possui, internamente, uma "auto-referência"**, ou seja, uma **referência a si mesma**.
 Essa auto-referência é representada pela **palavra-chave `this`**.
 
 * **Referenciar atributos** e **métodos** da **própria instância** atual.
 * Diferenciar entre **atributos da classe** e **parâmetros do método** que têm o mesmo nome.
 * Chamar **outros construtores** da mesma classe.
+> this serve diferenciar os atributos da classe dos parâmetros do método.
 
 - Exemplo 
-
 ```java
 void setNome(String nome) {
   this.nome = this.converteParaMaiuscula(nome);
@@ -37,3 +36,18 @@ void setNome(String nome) {
        this.idade = idade;
    }
    ```
+
+- Passar o proprio objeto como argumento para outro método ou construtor:
+
+```java 
+public void processar() {
+    this.armazenar(this);
+}
+
+public void armazenar(Pessoa pessoa) {
+    // lógica de armazenamento
+}
+
+// Explicação clara:
+// Aqui, `this` é usado para passar a própria instância do objeto `Pessoa` para o método `armazenar`, permitindo que ele trabalhe com os dados da instância atual.
+```

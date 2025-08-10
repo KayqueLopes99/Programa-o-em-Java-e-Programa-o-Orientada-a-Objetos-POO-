@@ -1,25 +1,19 @@
 ## Objetos, Construtores e Instâncias em Classes - Java
 - Para representar dados específicos usando classes, é necessária a criação de **objetos** (ou **instâncias**) dessa classe.
-
 - Os objetos são a materialização da classe e, assim, podem ser usados para representar dados e executar operações.
-
 - Para que possam ser manipulados, é necessário criar **referências** a esses objetos, que são basicamente variáveis do "tipo" da classe.
-Cada instância de uma classe possui os **mesmos atributos** definidos na classe.
+- Cada instância de uma classe possui os **mesmos atributos** definidos na classe.
 
 ---
 ![Exemplo de Classe](image.png)
 
 ---
 ### Criação por Referência
-
 - A criação de objetos por referência é **similar à criação de variáveis de tipos primitivos**:
-
 ```java
 NomeDaClasse nomeDoObjeto;
 ```
-
 - **Exemplo:**
-
 ```java
 Matricula mat;
 ```
@@ -28,27 +22,22 @@ Matricula mat;
 
 ### Criação do Objeto com `new`
 - Para criar um objeto, usamos a palavra-chave `new`.
-
 ```java
 Matricula mat = new Matricula();
 ```
-
 ou
-
 ```java
 Matricula mat;
 mat = new Matricula();
 ```
 
 - O operador `new`:
-
 * Cria uma **instância** da classe e retorna a referência do novo objeto;
 * **Aloca memória** para o novo objeto;
 * Chama um **método especial de inicialização** da classe, chamado **construtor**;
 * Retorna a **referência** para o novo objeto.
 
 ### Detalhamento
-
 ```java
 Matricula mat;
 ```
@@ -77,23 +66,18 @@ mat = new Matricula();
 ---
 
 ## Utilizando Objetos
-
 - Uma vez que um objeto tenha sido criado, seus **métodos e atributos públicos** podem ser acessados usando sua referência e o **operador ponto**:
 
 ```java
 <identificador>.<método>
 <identificador>.<atributo>
 ```
-
 **Exemplos:**
-
 ```java
 triangulo.calculaPerimetro();
 triangulo.desc;
 ```
-
 **Observação:** Para comparar objetos do tipo `String`, usamos o método `.equals`:
-
 ```java
 str1.equals(str2);
 ```
@@ -101,13 +85,15 @@ str1.equals(str2);
 
 ## Construtores
 - Construtores são **métodos especiais**, chamados **automaticamente** quando instâncias são criadas com a palavra-chave `new`.
-
+* Inicializam os atributos do objeto.
+* Permitir ou obrigar o objeto a receber valores iniciais.
 * São executados **antes de qualquer outro método**;
 * Devem ter **exatamente o mesmo nome da classe**;
 * **Não possuem tipo de retorno**, nem `void`.
 
-**Sintaxe:**
 
+
+**Sintaxe:**
 ```java
 NomeDaClasse(argumentos) {
     // Corpo do construtor
@@ -132,3 +118,7 @@ public class Matricula {
 ```
 - O `this` é uma referência ao objeto atual, permitindo acessar atributos e métodos da própria classe.
 - Como o `self` em Python.
+
+## Obs:
+- Construtores podem ser **sobrecarregados**, ou seja, podem existir vários construtores com diferentes assinaturas (número e tipo de parâmetros).
+- Isso permite criar objetos de maneiras diferentes, dependendo dos parâmetros fornecidos.

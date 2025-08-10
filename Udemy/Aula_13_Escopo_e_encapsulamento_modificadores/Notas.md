@@ -107,7 +107,7 @@ modificador-de-acesso tipo-de-retorno nome-do-metodo(argumentos);
 
 ---
 
-### 📋 Existem 4 modificadores principais:
+### Existem 3 modificadores de acesso principais:
 
 | Modificador | Acesso permitido por:                                     | Exemplo na prática                     |
 | ----------- | --------------------------------------------------------- | -------------------------------------- |
@@ -118,28 +118,6 @@ modificador-de-acesso tipo-de-retorno nome-do-metodo(argumentos);
 - protected: Permite acesso a subclasses, mesmo que estejam em pacotes diferentes.
 
 ---
-
-### Exemplo com todos:
-
-```java
-public class Conta {
-    private double saldo;            // visível apenas nesta classe
-    public int numeroConta;         // visível para todos
-    protected String titular;       // visível para classes filhas
-    String banco;                   // visível apenas dentro do pacote
-
-    public void depositar(double valor) {
-        saldo += valor;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    private void validarConta() {
-        // método auxiliar interno
-    }
-}
-```
+![image](image2.png)
 
 ---

@@ -1,19 +1,18 @@
-## Arrays e ArrayLists
+## Arrays e ArrayLists - [Vetores]
+> Homogênea (dados do mesmo tipo).
+> Ordenada (elementos acessados por meio de posições).
+> Alocada de uma vez só, em um bloco contíguo de memória.
+> Acesso imediato aos elementos pela sua posição.
 
-- **motivação**  
-  Considere uma classe que deva encapsular 1440 valores de ponto flutuante correspondentes a medidas de temperatura obtidas a cada minuto em um dia inteiro em uma estação meteorológica.  
-  Claramente, usar uma variável para cada medida seria inviável.  
-  O problema é simplificado dando um nome único às variáveis e usando índices para identificar as diferentes medidas.  
-  Considere agora o problema de representar uma turma de alunos através de um conjunto de instâncias de uma classe `Aluno`.  
-  Uma classe `Turma` poderia conter um número pré-definido e limitado de referências a instâncias de `Aluno`, mas novamente a declaração e manipulação de muitas referências independentemente seria complexa e poderia levar a erros.
 
 ---
 
 ### Array
 
-Arrays são estruturas de dados que permitem o armazenamento de um conjunto de variáveis de um mesmo tipo ou instâncias de uma mesma classe usando uma única referência e um índice de acesso.  
-Cada um dos elementos do array pode ser acessado individualmente.  
-O array inteiro pode ser processado como uma única entidade, caso seja desejado, simplificando bastante algumas tarefas.
+- Arrays são estruturas de dados que permitem o armazenamento de um conjunto de variáveis de um mesmo tipo ou instâncias de uma mesma classe usando uma única referência e um índice de acesso.  
+
+- Cada um dos elementos do array pode ser acessado individualmente.  
+- O array inteiro pode ser processado como uma única entidade, caso seja desejado, simplificando bastante algumas tarefas.
 
 ---
 ![Arrays](image.png)
@@ -55,6 +54,7 @@ double[] duplicata = medidasDeTemperatura;
 
 - Após a inicialização, podemos acessar seus elementos usando o nome da referência seguido do índice do elemento entre colchetes.
 - O primeiro índice é o **zero**.
+> todos os campos do array inicialmente estão com valor padrão 0 ou 0.0. ou etc.
 
 ```java
 int[] posicoesDeMemoria = new int[1024];

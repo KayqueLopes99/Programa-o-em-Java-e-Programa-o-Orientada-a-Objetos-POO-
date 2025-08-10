@@ -1,17 +1,10 @@
 ## Introdução à Programação Orientada a Objetos (POO)
-- A Programação Orientada a Objetos (POO) é um paradigma de programação que utiliza "objetos" para representar dados e métodos.
-
 - Orientação a objetos:
 - Dados e as operações que serão realizadas sobre estes formam um conjunto único (objeto).
 - A resolução de um problema é dada em termos de interações realizadas entre esses objetos.
-- Benefícios:
-   - Modularidade: o código é dividido em partes menores e mais gerenciáveis.
-   - Reutilização: classes podem ser reutilizadas em diferentes partes do código ou em projetos diferentes.
-   - Encapsulamento: os detalhes internos de uma classe podem ser ocultados, expondo apenas o que é necessário.
-   - Encapsulamento: os detalhes internos de uma classe podem ser ocultados, expondo apenas o que é necessário.
 
-## Criação de Classes
-- Uma classe é uma estrutura que define um tipo de objeto, incluindo seus atributos (dados) e métodos (funções).
+## 0.1 Criação de Classes
+- Uma classe é uma estrutura que define um tipo de objeto, incluindo seus atributos (dados / campos) e métodos (funções / operações).
 - *Classes* são estruturas que contém, para determinado modelo, os dados que devem ser representados e as operações que devem ser efetuadas com estes dados.
 - Exemplos de classes: Pessoa, Imovel, Produto…
 
@@ -34,7 +27,7 @@ class NomeDaClasse {
 
 
 
-## **2. Atributos**
+## 0.2 Atributos
 - Os **atributos** (ou campos) são as **variáveis declaradas dentro de uma classe**, representando os dados que cada objeto daquela classe poderá armazenar.
 - Sintaxe:
 ```java
@@ -65,16 +58,16 @@ class CadastroDeFuncionariosDeSupermercado {
 
 
 
-## **3. Métodos**
+## 0.3 Métodos
 - São **as ações ou comportamentos da classe** — ou seja, funções associadas a objetos daquela classe.
 - Sintaxe:
 
 ```java
-tipoDeRetorno nomeDoMetodo(parâmetros) {
+tipo_encapsulamento tipoDeRetorno nomeDoMetodo(parâmetros) {
     // corpo do método
 }
 ```
-
+* O `tipo_encapsulamento` pode ser `public`, `private`, `protected` ou `default` (sem modificador).
 * O `tipoDeRetorno` pode ser `void` (quando o método não retorna nada) ou um tipo de dado (`int`, `float`, `String`, etc.).
 * Para retornar um valor, usa-se a palavra-chave `return`.
 

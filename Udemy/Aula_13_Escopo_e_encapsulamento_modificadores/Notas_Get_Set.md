@@ -1,9 +1,7 @@
-## `get` e `set`?
-
+## `get` e `set`
 - Os métodos **getter (`get`)** e **setter (`set`)** são usados para acessar e modificar **atributos `private`** de uma classe, respeitando o **encapsulamento**.
 
 ### Se o atributo fosse `public`:
-
 > Qualquer um poderia acessar ou modificar sem controle:
 
 ```java
@@ -87,3 +85,11 @@ public class Data {
 | ------ | --------- | ------------------------------------ |
 | `set`  | Modificar | Validar se o novo valor é aceitável  |
 | `get`  | Acessar   | Controlar como o valor é apresentado |
+
+> Isso é um padrão!
+
+## No eclipse imagem:
+---
+![image](image.png)
+
+---

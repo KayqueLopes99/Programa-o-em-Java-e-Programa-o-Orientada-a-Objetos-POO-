@@ -1,5 +1,4 @@
 ## Instâncias
-
 * **Classe**: é o **molde**, o **modelo**, a **definição** de como os objetos serão.
 
   * Ex: `Carro`, `Pessoa`, `RegistroAcademico` são classes.
