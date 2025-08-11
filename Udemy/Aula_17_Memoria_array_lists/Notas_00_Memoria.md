@@ -33,6 +33,14 @@ programa em execução do heap (dinâmica).
 ## Boxing:
 - O processo de conversão de um tipo primitivo para o seu correspondente tipo referência é chamado boxing (empacotamento).
 
+## Unboxing:
+- É o processo de conversão de um objeto tipo referência para um
+objeto tipo valor compatível.
 
+## Wrapper classes:
+- São classes equivalentes aos tipos primitivos
+- Aceita valores nulos. Em cenários de tipo ``ClassType variable``
+---
+![image](image5.png)
 
-
+---

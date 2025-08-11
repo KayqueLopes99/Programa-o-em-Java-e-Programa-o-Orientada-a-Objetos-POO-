@@ -6,11 +6,15 @@
 - manipular um intervalo especificado de elementos
 - procurar elementos
 - obter um ListIterator para acessar os elementos
+> Inicia vazia, e seus elementos são alocados sob demanda
+> Tamanho variável
+> Facilidade para se realizar inserções e deleções
 
-#### Principais Implementações:
-##### `ArrayList` e `Vector`
+> ``List<String> list = new ArrayList<>();``
 
--**"Implementações de arrays redimensionáveis"**.7
+### Implementações:
+#### `ArrayList` e `Vector`:
+- **"Implementações de arrays redimensionáveis"**.
 - Ambas usam um array para armazenar os elementos. Quando esse array fica cheio e você tenta adicionar um novo elemento, elas criam um novo array maior e copiam todos os elementos do antigo para o novo.
 
 - **"Comportamentos praticamente idênticos"**.
@@ -93,3 +97,25 @@ Claro, Kayque. Aqui estão os 10 métodos mais utilizados e essenciais da interf
 10. **`add(int index, E element)`**
 - **O que faz:** Adiciona um elemento em uma posição específica, "empurrando" os elementos seguintes para a direita.
 - **Sintaxe da Chamada:** `minhaLista.add(1, "Item Inserido");`
+
+11. **`removeIf(condiçãoPredicado)`**
+```java
+   import java.util.ArrayList;
+   import java.util.List;
+   import java.util.function.Predicate;
+
+   public class RemoveIfExample {
+       public static void main(String[] args) {
+           List<String> lista = new ArrayList<>();
+           lista.add("A");
+           lista.add("B");
+           lista.add("C");
+           lista.add("B");
+
+           // Remove todos os elementos iguais a "B"
+           lista.removeIf(elemento -> elemento.equals("B"));
+
+           System.out.println(lista); // Output: [A, C]
+       }
+   }
+```

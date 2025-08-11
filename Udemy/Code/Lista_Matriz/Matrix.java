@@ -1,24 +1,3 @@
-## Array Multi-Dimensionais
-
-- Até agora vimos arrays de uma única dimensão: para acessar os elementos destes arrays basta usar um único índice.  
-Podemos criar arrays multidimensionais em Java, onde a posição de cada elemento dentro do array será indicada por dois ou mais índices.
-
-```java
-char tabuleiro[][] = new char[8][8];
-tabuleiro[5][4] = 'x';
-
-int[][] b = {{1, 2}, {3, 4, 5}};
-
-```
-
-- Um exemplo comum de arrays multidimensionais são **matrizes matemáticas**, que representam valores tabulados em **linhas e colunas**.
-
----
-![image](image6.png)
-
----
-
-```java
 package Udemy.Code.Lista_Matriz;
 
 import java.util.Scanner;
@@ -39,7 +18,7 @@ public class Matrix {
             }
         }
 
-        System.out.println("Main diagonal: ");
+        System.out.print("\nMain diagonal: ");
         for (int lineIndex = 0; lineIndex < matrix.length; lineIndex++) {
             System.out.print(matrix[lineIndex][lineIndex] + " ");
         }
@@ -56,6 +35,3 @@ public class Matrix {
         scanner.close();
     }
 }
-
-
-```
