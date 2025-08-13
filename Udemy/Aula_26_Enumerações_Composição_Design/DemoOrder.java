@@ -5,7 +5,7 @@ public class DemoOrder {
         Order order = new Order(180, new Date(), ExemploEnum.PENDING_PAYMENT);
         System.out.println(order);
 
-         ExemploEnum os1 = ExemploEnum.DELIVERED;
+        ExemploEnum os1 = ExemploEnum.DELIVERED;
         ExemploEnum os2 = ExemploEnum.valueOf("DELIVERED");
 
         System.out.println(os1 + " | " + os2);
