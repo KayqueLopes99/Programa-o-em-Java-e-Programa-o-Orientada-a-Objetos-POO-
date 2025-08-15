@@ -93,7 +93,7 @@ public class Order {
             }
             System.out.println("Total price R$: " + total());
         } else {
-            System.out.println("Nenhum produto cadastrado na lista.");
+            System.out.println("Nenhum pedido cadastrado na lista.");
         }
     }
 
