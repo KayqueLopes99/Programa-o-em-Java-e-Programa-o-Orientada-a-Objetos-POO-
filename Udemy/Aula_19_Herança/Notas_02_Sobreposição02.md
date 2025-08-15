@@ -8,11 +8,18 @@
 ---
 - O mecanismo de **herança** permite que criemos uma classe usando outra como base.  
 - Deve-se descrever na nova classe as **diferenças** da classe base  
-- Reutiliza os **campos e métodos** da classe base  
+- Reutiliza os **atributos e métodos** da classe base  
 - Instâncias da subclasse podem chamar métodos e acessar atributos (herdados) diretamente, como se fossem delas mesmas  
 - É o mais apropriado para criar relações "**é-um-tipo-de**" entre classes  
  
 ---
+## No uml:
+![image](image2.png)
+
+
+---
+
+
 
 ### Sintaxe - Uso do `extends`:
 
@@ -129,16 +136,46 @@ public class Ponto3D extends Ponto2D {
 super.nomeDoMetodo(par1, ..., parN);
 ```
 
-- Sobreposição (Override)
+### Sobreposição (Override)
 - A declaração de métodos com a mesma assinatura que métodos das classes ancestrais é chamada de sobreposição (ou superposição).
 
 - A razão de sobrepormos métodos é que métodos de classes herdeiras geralmente executam tarefas adicionais que os mesmos métodos das classes ancestrais não executam.
 
 - Usamos o modificador `@Override` para:
 - Indicar que um método está sendo sobrescrito (ou seja, redefinido) de uma superclasse (classe pai) em uma subclasse (classe filha).
+
+- Comportamento especifico.
 ```java
 @Override
 public void nomeDoMetodo() {
     // implementação do método
 }
 ```
+
+## Casting é o processo de conversão de um tipo de dado para outro
+
+### Upcasting
+- Casting da subclasse para superclasse
+- Uso comum: polimorfismo
+
+### Downcasting
+- Casting da superclasse para subclasse
+- Palavra instanceof
+- Uso comum: métodos que recebem parâmetros genéricos (ex: Equals)
+
+
+### Operador `instanceof`
+
+- O operador `instanceof` verifica se um objeto é uma instância de uma classe específica ou de suas subclasses.
+- Retorna `true` se o objeto for do tipo especificado, caso contrário retorna `false`.
+
+Exemplo:
+```java
+if (empregado instanceof Empregado) {
+        // empregado é uma instância de Empregado ou de uma subclasse
+}
+```
+
+**Resumo:**  
+- Use `final` para impedir modificações, sobrescritas ou heranças.
+- Use `instanceof` para checar o tipo de um objeto em tempo de execução.

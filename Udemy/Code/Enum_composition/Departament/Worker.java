@@ -81,10 +81,10 @@ public class Worker {
         scanner.nextLine();
         int indexContract = 1;
 
+        DateTimeFormatter formater = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
         while (quantityContractForAdd != 0) {
             System.out.println("Enter #" + indexContract + " contract data:");
-
-            DateTimeFormatter formater = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
             LocalDate datecontract = null;
 

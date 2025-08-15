@@ -1,7 +1,9 @@
 ## Herança e reuso de classes
-
-- Capacidade de facilitar a reutilização de código
-- Diminui a necessidade de escrever novos métodos e classes
+> É um tipo de associação que permite que uma classe herde todos dados e comportamentos de outra.
+> RELAÇÃO: É-UM...
+> ASSOCIAÇÃO ENTRE CLASSES E NÃO ENTRE OBJETOS.
+- Reutilização e polimorfismo.
+- Diminui a necessidade de escrever novos métodos e classes.
 - Criação de classes baseadas em outras
 - Classes criadas com esta técnica poderão conter os métodos das classes originais, além de poder adicionar comportamento específico da nova classe.
 

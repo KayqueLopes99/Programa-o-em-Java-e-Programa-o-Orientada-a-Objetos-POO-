@@ -5,32 +5,9 @@
 
 - Pense em um controle remoto universal (a referência). Ele tem um botão "Ligar". Quando você aponta para uma TV Samsung e aperta "Ligar", ele liga a TV. Quando você aponta para um aparelho de som da Sony, o **mesmo botão** "Ligar" executa a ação de ligar o som. A mensagem é a mesma ("Ligar"), mas o comportamento (a "forma" da ação) muda de acordo com o objeto.
 
+> A associação do tipo específico com o tipo genérico é feita em tempo de
+execução (upcasting).
+> O compilador não sabe para qual tipo específico a chamada do método Withdraw está sendo feita (ele só sabe que são duas variáveis tipo Account) 
+
 ### O polimorfismo se manifesta principalmente de três formas. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- listada nos proximos arquivos.
