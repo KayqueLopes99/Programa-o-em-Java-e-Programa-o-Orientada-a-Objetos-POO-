@@ -3,11 +3,16 @@
 ![image](image.png)
 
 ---
+- • É uma forma de garantir herança total: somente subclasses não
+abstratas podem ser instanciadas, mas nunca a superclasse abstrata
 
-- A abstração é um dos quatro pilares fundamentais da POO (junto com Encapsulamento, Herança e Polimorfismo).
 
 - O propósito de uma classe abstrata é fornecer uma superclasse apropriada a partir da qual outras classes podem herdar e assim compartilhar um modelo comum;
 - **Uma classe abstrata não pode ser utilizada para instanciar objetos.**
+> Italico no nome da classe uml.
+> MOTIVOS: Reuso e polimorfismo.
+
+
 
 
 - Pense em um carro. Para dirigir, você só precisa saber usar o volante, os pedais e a marcha. Você não precisa conhecer os detalhes de como o motor de combustão funciona, como a injeção eletrônica distribui o combustível ou como a transmissão engata as marchas. O carro **abstrai** toda essa complexidade para você, fornecendo uma interface simples (volante e pedais).
@@ -30,6 +35,7 @@ public abstract class NomeDaClasse {
 }
 ```
 
+### 0.2 Métodos abstratos
 - **Para declarar um método abstrato (sem corpo, apenas a assinatura):**
 - Um método abstrato é não fornece implementação e tem a palavra-chave abstract na sua declaração;
 
@@ -39,6 +45,9 @@ public abstract class NomeDaClasse {
 public abstract tipoDeRetorno nomeDoMetodo(parametros);
 ```
 - OBS: Uma classe abstrata pode ser derivada por outras classes que, por sua vez, deverão implementar seus métodos abstratos ou declarar-se também abstratas;
+> Ex: Figura e Formas geométricas.
+> Notação uml italico.
+
 
 ### Exemplo
 **Arquivo: `Funcionario.java`**

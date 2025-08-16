@@ -18,16 +18,20 @@ try {
 }
 ```
 
-* Para lidar com uma exceção, coloque qualquer código que possa lançar uma exceção em uma instrução try.
-* O bloco try contém o código que pode lançar uma exceção.
-* O bloco catch contém o código que trata a exceção se uma ocorrer.
++ Para lidar com uma exceção, coloque qualquer código que possa lançar uma exceção em uma instrução try.
++ O bloco try contém o código que pode lançar uma exceção.
++ O bloco catch contém o código que trata a exceção se uma ocorrer.
 
 ## Hierarquia de exceções
 
-* Todas as classes de exceção do Java herdam direta ou indiretamente da classe Exception.
-* Somente objetos Throwable podem ser utilizados com o mecanismo de tratamento de exceção.
-* Exceptions representam situações excepcionais que podem ser capturadas pelo aplicativo.
-* A classe Error e suas subclasses representam situações anormais; geralmente os aplicativos não podem se recuperar de Errors.
+---
+![](image.png)
+
+---
+- Todas as classes de exceção do Java herdam direta ou indiretamente da classe Exception.
+- Somente objetos Throwable podem ser utilizados com o mecanismo de tratamento de exceção.
+- Exceptions representam situações excepcionais que podem ser capturadas pelo aplicativo.
+- A classe Error e suas subclasses representam situações anormais; geralmente os aplicativos não podem se recuperar de Errors.
 
 ## A instrução try … catch (blocos múltiplos)
 > Podem haver muitos blocos catch para tratar diferentes tipos de exceções que podem ser lançadas no bloco try correspondente.
@@ -103,11 +107,11 @@ DivideByZeroNoExceptionHandling.java:22)
 
 ```java
 public static int divisao(int numerador, int denominador) throws ArithmeticException
-```
-
-* Os chamadores do método `divisao` são assim informados de que o método pode lançar uma exceção.
 
 ```
+- Os chamadores do método `divisao` são assim informados de que o método pode lançar uma exceção.
 
-Quer que eu gere um arquivo `.md` com isso?
-```
+## exceção.printStackTrace():
+- Este método, quando chamado em uma exceção, imprime no console uma representação legível do rastreamento da pilha. 
+> Fluxo de erro padrão:
+> Basicamente serve para impressão detahada do erro
