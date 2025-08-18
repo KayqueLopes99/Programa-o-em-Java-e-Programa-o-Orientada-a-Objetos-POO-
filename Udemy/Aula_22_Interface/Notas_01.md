@@ -1,6 +1,7 @@
 ## Interface
-- Outra forma de obter abstração em Java é com interfaces
-- Assim como as classes abstratas, as interfaces não podem ser usadas para criar objetos. 
+- Interface é um tipo que define um conjunto de operações que umaclasse deve implementar.
+-  A interface estabelece um contrato
+que a classe deve cumprir.
 
 ## O Conceito: O que é uma Interface?
 

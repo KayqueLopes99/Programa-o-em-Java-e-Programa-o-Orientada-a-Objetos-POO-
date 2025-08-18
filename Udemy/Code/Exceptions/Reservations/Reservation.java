@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class Reservation {
     private int roomNumber;
     private LocalDate checkin;
+
     private LocalDate checkout;
 
     public Reservation(int roomNumber, LocalDate checkin, LocalDate checkout) {
@@ -49,24 +50,21 @@ public class Reservation {
     };
 
     public int duration() {
-    return (int) ChronoUnit.DAYS.between(this.checkin, this.checkout);
-}
+        return (int) ChronoUnit.DAYS.between(this.checkin, this.checkout);
+    }
 
-    public boolean updateDates(LocalDate newCheckin, LocalDate newCheckout) {
-        boolean success = false;
-
+    public boolean updateDates(LocalDate newCheckin, LocalDate newCheckout) throws DomainException {
         if (newCheckin.isBefore(this.checkin) || newCheckout.isBefore(this.checkout)) {
-            System.out.println("Erro: As datas de atualização devem ser futuras em relação à reserva atual!");
-        } else if (newCheckout.isBefore(newCheckin)) {
-            System.out.println("Erro: Checkout não pode ser antes do check-in.");
-        } else {
-            this.checkin = newCheckin;
-            this.checkout = newCheckout;
-            success = true;
-            System.out.println("Datas atualizadas com sucesso!");
+            throw new DomainException("As datas de atualização devem ser futuras em relação à reserva atual!");
+        }
+        if (newCheckout.isBefore(newCheckin)) {
+            throw new DomainException("Checkout não pode ser antes do check-in.");
         }
 
-        return success;
+        this.checkin = newCheckin;
+        this.checkout = newCheckout;
+        System.out.println("Datas atualizadas com sucesso!");
+        return true;
     }
 
     public static void registerReservation(Scanner scanner) {
@@ -91,7 +89,12 @@ public class Reservation {
             while (!updated) {
                 LocalDate checkin2 = dateVerification(scanner, "Checkin");
                 LocalDate checkout2 = dateVerification(scanner, "Checkout");
-                updated = reservation.updateDates(checkin2, checkout2);
+
+                try {
+                    updated = reservation.updateDates(checkin2, checkout2);
+                } catch (DomainException e) {
+                    System.out.println("Erro: " + e.getMessage());
+                }
             }
             System.out.println(reservation);
         }
