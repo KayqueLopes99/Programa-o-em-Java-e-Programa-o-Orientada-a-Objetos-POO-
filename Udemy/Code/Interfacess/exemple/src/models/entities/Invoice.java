@@ -1,4 +1,4 @@
-package Udemy.Code.Interfacess.src.models.entities;
+package Udemy.Code.Interfacess.exemple.src.models.entities;
 
 public class Invoice {
     private double basicPayment;

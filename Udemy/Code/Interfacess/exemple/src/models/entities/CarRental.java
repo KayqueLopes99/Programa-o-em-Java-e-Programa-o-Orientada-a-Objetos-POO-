@@ -1,12 +1,12 @@
-package Udemy.Code.Interfacess.src.models.entities;
+package Udemy.Code.Interfacess.exemple.src.models.entities;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
 import Udemy.Code.Exceptions.Reservations.DomainException;
-import Udemy.Code.Interfacess.src.models.services.BrazilTaxService;
-import Udemy.Code.Interfacess.src.models.services.RentalService;
-import Udemy.Code.Interfacess.src.models.utils.Tratatives;
+import Udemy.Code.Interfacess.exemple.src.models.services.BrazilTaxService;
+import Udemy.Code.Interfacess.exemple.src.models.services.RentalService;
+import Udemy.Code.Interfacess.exemple.src.models.utils.Tratatives;
 
 public class CarRental {
     private LocalDateTime start;

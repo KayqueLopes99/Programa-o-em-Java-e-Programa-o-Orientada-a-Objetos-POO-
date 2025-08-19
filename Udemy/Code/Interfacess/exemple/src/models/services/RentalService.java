@@ -1,10 +1,10 @@
-package Udemy.Code.Interfacess.src.models.services;
+package Udemy.Code.Interfacess.exemple.src.models.services;
 
 import java.time.Duration;
 import java.util.Scanner;
 
-import Udemy.Code.Interfacess.src.models.entities.CarRental;
-import Udemy.Code.Interfacess.src.models.entities.Invoice;
+import Udemy.Code.Interfacess.exemple.src.models.entities.CarRental;
+import Udemy.Code.Interfacess.exemple.src.models.entities.Invoice;
 
 public class RentalService {
     private double pricePerHour;

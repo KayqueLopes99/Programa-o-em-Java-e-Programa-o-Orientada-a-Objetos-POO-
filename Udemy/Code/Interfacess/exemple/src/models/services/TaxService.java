@@ -1,4 +1,4 @@
-package Udemy.Code.Interfacess.src.models.services;
+package Udemy.Code.Interfacess.exemple.src.models.services;
 
 public interface TaxService {
     public double tax(double amount);

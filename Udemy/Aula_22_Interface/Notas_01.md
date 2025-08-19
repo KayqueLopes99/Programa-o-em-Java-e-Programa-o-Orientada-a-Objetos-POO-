@@ -2,7 +2,7 @@
 - Interface é um tipo que define um conjunto de operações que umaclasse deve implementar.
 -  A interface estabelece um contrato
 que a classe deve cumprir.
-
+> No uml é a seta: - - - - - ->
 ## O Conceito: O que é uma Interface?
 
 - É um documento que define um conjunto de **comportamentos** (métodos) que uma classe se compromete a executar, mas não diz **COMO** ela deve executá-los.
@@ -156,3 +156,7 @@ torre.autorizarVoo(meuDrone); // Funciona também!
 | **Métodos** | Geralmente todos abstratos. | Pode ter métodos abstratos e concretos. |
 | **Palavra-chave** | `implements` | `extends` |
 | **Relação** | "É capaz de..." (um `Aviao` é capaz de `Voador`).| "É um..." (um `Aviao` é um `Veiculo`). |
+
+----
+![](image.png)
+---- 

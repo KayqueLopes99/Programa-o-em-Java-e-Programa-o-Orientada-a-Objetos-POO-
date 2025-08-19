@@ -1,6 +1,6 @@
-package Udemy.Code.Abstract.Shape_Figures;
+package Udemy.Code.Interfacess.Shape;
 
-public class Rectangle extends Shape{
+public class Rectangle extends AbstractShape{
     private double width, height;
 
     public Rectangle(Color color, double width, double height) {
