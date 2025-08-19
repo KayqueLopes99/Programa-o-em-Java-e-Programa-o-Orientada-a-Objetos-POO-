@@ -1,9 +1,9 @@
 ## Métodos e Classes Genericas:
 - **Genéricos** permitem que você escreva **métodos e classes reutilizáveis**, onde o **tipo de dado** é **especificado no momento do uso**, e **não fixo no código**.
-
+> Generics permitem que classes, interfaces e métodos possam ser parametrizados por tipo.
+> Uso em coleções
 
 ###  Motivação: 
-
 Imagina que você quer criar um método para retornar o **maior valor** entre dois dados. Sem genéricos, você precisaria sobrecarregar o método:
 
 ```java

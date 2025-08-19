@@ -35,10 +35,9 @@ object1.equals(object2);
 
 
 #### 3. `hashCode()`
+- **O que faz?** Retorna um valor de hash (um número inteiro) para o objeto.
+- **Comportamento Padrão:** Geralmente, converte o endereço de memória interno do objeto em um inteiro.
 
-  - **O que faz?** Retorna um valor de hash (um número inteiro) para o objeto.
-  - **Comportamento Padrão:** Geralmente, converte o endereço de memória interno do objeto em um inteiro.
- 
  
 
 #### 4, 5 e 6. `wait()`, `notify()` e `notifyAll()`

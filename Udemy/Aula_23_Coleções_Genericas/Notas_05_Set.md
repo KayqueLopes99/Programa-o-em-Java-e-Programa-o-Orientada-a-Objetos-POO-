@@ -8,7 +8,21 @@ import java.util.HashSet;
 import java.util.TreeSet;
 import java.util.LinkedHashSet;
 ```
+
 ### obs:
+> Não admite repetições
+> Elementos não possuem posição
+> Acesso, inserção e remoção de elementos são rápidos
+> Oferece operações eficientes de conjunto: interseção, união, diferença.
+
+> Principais implementações:
+
+> **HashSet** - mais rápido (operações O(1) em tabela hash) e não ordenado
+
+> **TreeSet** - mais lento (operações O(log(n)) em árvore rubro-negra) e ordenado pelo compareTo do objeto (ou Comparator)
+
+> **LinkedHashSet** - velocidade intermediária e elementos na ordem em que são adicionados
+
 - HashSet: Implementa a interface `Set` e usa uma tabela hash para armazenar os elementos.
 - TreeSet: Implementa a interface `Set` e usa uma árvore binária balanceada (geralmente uma árvore vermelha-preta) para armazenar os elementos em ordem crescente.
 
@@ -19,6 +33,12 @@ import java.util.LinkedHashSet;
 - `size`: Retorna o número de elementos no conjunto.
 - `isEmpty`: Verifica se o conjunto está vazio.
 - `clear`: Remove todos os elementos do conjunto.
+- `removeIf(predicate)`: remove quem atende a condição no predicado.
+- ``addAll(other)`` - união: adiciona no conjunto os elementos do outro conjunto, sem repetição
+- ``retainAll(other)`` - interseção: remove do conjunto os elementos não contitos em other
+- ``removeAll(other)`` - diferença: remove do conjunto os elementos contidos em other
+
+- `get()` - pegar um elemento
 
 ### Outros:
 - *headSet*: Retorna uma visão do conjunto que contém todos os elementos menores ou iguais a um determinado elemento.
@@ -62,3 +82,10 @@ public class ExemploSet {
     }
 }
 ```
+
+
+## Comparação de elemento com o set:
+> Necessita de um método equals e hashcode na classe associada a estrutura e dados.
+
+## Como TreeSet compara os elementos:
+> Uso do método compareTo() na classe associada
