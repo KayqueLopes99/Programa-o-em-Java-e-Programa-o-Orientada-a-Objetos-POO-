@@ -47,5 +47,16 @@ Car car = new Car(engine); // injetando a dependência
 > Implementação de ambos
 ---
 ![](image1.png)
+- classe que implementa a interface é abstrata exigindo que as outra por herança dela implemente o método da interface.
+> É UM PADRÃO DE PROJETO.
+---
+
+## Problema do diamante
+- A herança múltipla pode gerar oproblema do diamante: umaambiguidade causada pelaexistência do mesmo método emmais de uma superclasse.
+> JAVA NÃO PERMITE.
+> Uma solução possível é uso de interfaces.
+
+---
+![](image3.png)
 
 ---

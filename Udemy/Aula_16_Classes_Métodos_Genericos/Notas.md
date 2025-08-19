@@ -66,7 +66,7 @@ public class Teste {
 
 ---
 
-### ✅ Exemplo: Pilha Genérica
+### Exemplo: Pilha Genérica
 
 ```java
 public class Caixa<T> {
