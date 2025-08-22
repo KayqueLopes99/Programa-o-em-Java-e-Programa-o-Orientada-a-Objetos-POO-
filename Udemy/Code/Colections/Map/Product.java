@@ -1,7 +1,7 @@
 package Udemy.Code.Colections.Map;
 
 
-public class Product {
+public class Product implements Comparable<Product> {
     private String name;
     private double price;
 
@@ -26,8 +26,16 @@ public class Product {
         this.price = price;
     }
 
+    
+
 
     
+    @Override
+    public int compareTo(Product o) {
+        
+        return 0;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -57,6 +65,7 @@ public class Product {
             return false;
         return true;
     }
+
 
     public String toString() {
         return "Product: " + name + 
