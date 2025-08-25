@@ -162,7 +162,7 @@ public class Venda {
         for (ItemVenda item : venda.getItensVenda()) {
             VendaDao.cadastrarVendaBanco(venda, cliente.getId(), cliente.getNome(), item);
         }
-        SomUtil.carregarSom("src/utils/sons/vendafinalizada/venda.wav");
+        SomUtil.carregarSom("Projeto MUSIC STORE/src/utils/sons/vendafinalizada/venda.wav");
 
         System.out.println("Venda finalizada e salva com sucesso!");
         SomUtil.tocarSom();

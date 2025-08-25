@@ -35,7 +35,7 @@ public class TelaLoginView {
 
                     if (usuarioEncontrado != null) {
                         if (usuarioEncontrado.login(email, senha)) {
-                             SomUtil.carregarSom("src/utils/sons/entranaconta/conta.wav");
+                             SomUtil.carregarSom("Projeto MUSIC STORE/src/utils/sons/entranaconta/conta.wav");
                             System.out.println("Login autorizado!");
                             SomUtil.tocarSom();
                            
