@@ -18,15 +18,6 @@
 ---
 
 
-
-
-
-
-
-
-
-
-
 ## Observações para desenvolver depois:
 - Nomenclatura Maiuscula.
 - Nome do arquivo deve ser o mesmo nome da classe.

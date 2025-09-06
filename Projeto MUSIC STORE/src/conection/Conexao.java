@@ -9,12 +9,10 @@ public class Conexao {
     private static final String USER = "root"; // ou o usuário que você criou
     private static final String PASSWORD = "52746363kl"; // sua senha
 
-    public static Connection getConexao() {
+   public static Connection getConexao() {
         try {
-            // força o carregamento do driver JDBC
-            Class.forName("com.mysql.cj.jdbc.Driver");
             return DriverManager.getConnection(URL, USER, PASSWORD);
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
