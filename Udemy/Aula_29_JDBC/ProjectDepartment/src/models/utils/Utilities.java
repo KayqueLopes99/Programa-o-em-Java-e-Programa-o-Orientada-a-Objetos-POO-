@@ -25,6 +25,7 @@ public class Utilities {
     public static int readInt(String prompt) {
         while (true) {
             try {
+                System.out.print(prompt + ": ");
                 return Integer.parseInt(scanner.nextLine().trim());
             } catch (NumberFormatException e) {
                 System.out.println("Please enter a valid integer!");
@@ -35,6 +36,7 @@ public class Utilities {
 
     public static String readLettersAndSpaces(String prompt) {
         while (true) {
+            System.out.print(prompt + ": ");
             String input = scanner.nextLine().trim();
 
             if (input.matches("[A-Za-zÀ-ÿ ]+") && input.replaceAll("[^A-Za-zÀ-ÿ]", "").length() >= 2) {
@@ -42,7 +44,7 @@ public class Utilities {
             }
 
             System.out.println("Please enter only letters and spaces (at least two letters)!");
-            System.out.print(prompt + ": ");
+            
         }
     }
 
@@ -50,7 +52,7 @@ public class Utilities {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         while (true) {
-            System.out.print("Enter the date (DD/MM/YYYY): ");
+            System.out.print("Enter the birth date (DD/MM/YYYY): ");
             String input = scanner.nextLine().trim();
 
             try {
@@ -61,22 +63,30 @@ public class Utilities {
         }
     }
 
-    public static String formatDate(LocalDate date) {
-        return date.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+    public static String readValidEmail() {
+        String email;
+        do {
+            System.out.print("Digite o email: ");
+            email = scanner.nextLine().trim();
+
+            if (!email.matches("^[\\w]+(\\.?[\\w-]+)*@(gmail|hotmail)\\.com(\\.br)?$")) {
+                System.out.println("Email inválido! Tente novamente.");
+            }
+        } while (!email.matches("^[\\w]+(\\.?[\\w-]+)*@(gmail|hotmail)\\.com(\\.br)?$"));
+
+        return email;
     }
 
-    public static boolean validateEmail(String email) {
-        return email.matches("^[\\w](\\.?[\\w-])*@(gmail|hotmail)\\.com(\\.br)?$");
-    }
-
-    public static double readDouble() {
+    public static double readDouble(String text) {
         while (true) {
             try {
+                System.out.print(text + ": ");
                 String input = scanner.nextLine().trim().replace(",", ".");
                 return Double.parseDouble(input);
             } catch (NumberFormatException e) {
-                System.out.println("Please enter a valid number!\nEnter the value again: ");
+                System.out.println("Please enter a valid number!");
             }
         }
     }
+
 }

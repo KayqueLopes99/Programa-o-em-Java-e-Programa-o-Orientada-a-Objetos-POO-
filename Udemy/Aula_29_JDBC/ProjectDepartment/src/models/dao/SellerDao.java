@@ -2,6 +2,7 @@ package Udemy.Aula_29_JDBC.ProjectDepartment.src.models.dao;
 
 import java.util.List;
 
+import Udemy.Aula_29_JDBC.ProjectDepartment.src.models.entities.Department;
 import Udemy.Aula_29_JDBC.ProjectDepartment.src.models.entities.Seller;
 
 public interface SellerDao {
@@ -14,4 +15,6 @@ public interface SellerDao {
     public Seller findById(int id);
 
     public List<Seller> findAll();
+
+    List<Seller> findByDepartment(Department department);
 }
