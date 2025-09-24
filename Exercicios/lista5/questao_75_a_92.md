@@ -264,11 +264,11 @@ public class Main {
 
 O resultado, obtido ao tentar compilar e executar esse conjunto de classes, será:
 
-(A) um erro de compilação, indicando que não é possível fazer uma conversão da classe Concreta1 para a classe Interface1.
+- (A) um erro de compilação, indicando que não é possível fazer uma conversão da classe Concreta1 para a classe Interface1.
 > (B) um erro de compilação, indicando que, no contexto de x, não existe metodoExotico.
-(C) nenhuma saída e um erro em tempo de execução, indicando que, dada a conversão de Concreta1 para Interface1, não é possível acessar metodoExotico.
-(D) impressão do número 1, seguida de um erro de tempo de execução, indicando que, dada a conversão de Concreta1 para Interface1, não é possível acessar metodoExotico.
-(E) impressão dos números 1 e 2.
+- (C) nenhuma saída e um erro em tempo de execução, indicando que, dada a conversão de Concreta1 para Interface1, não é possível acessar metodoExotico.
+- (D) impressão do número 1, seguida de um erro de tempo de execução, indicando que, dada a conversão de Concreta1 para Interface1, não é possível acessar metodoExotico.
+- (E) impressão dos números 1 e 2.
 
 -----
 
@@ -276,13 +276,12 @@ O resultado, obtido ao tentar compilar e executar esse conjunto de classes, ser�
 
 Na programação orientada a objetos, a possibilidade de haver mais de um método com o mesmo nome na mesma classe denomina-se:
 
-(a) Herança.
-(b) Sobrescrita.
+- (a) Herança.
+- (b) Sobrescrita.
 > (c) Sobrecarga.
-(d) Ligação tardia.
-(e) Encapsulamento.
+- (d) Ligação tardia.
+- (e) Encapsulamento.
 
-Com certeza, Kayque\! Aqui estão as questões formatadas em Markdown para seu repositório de estudos, sem nenhuma alteração no conteúdo.
 
 ### 81\. [UFSC - 2023 - Técnico de Tecnologia da Informação]
 
@@ -306,9 +305,9 @@ Existe uma gama de definições sobre a orientação a objetos. No sentido da re
 Muitas classes podem ter acesso \_\_\_\_\_, porém, \_\_\_\_\_ esse método \_\_\_\_\_. A sequência de palavras que preenche corretamente as lacunas é:
 
 > (A) a um mesmo método / cada classe executa / de maneira diferente
-(B) a um mesmo método / outras classes executam / da mesma maneira
-(C) somente a um método / outras classes executam / de maneira diferente
-(D) somente a um método / cada classe executa / da mesma maneira
+- (B) a um mesmo método / outras classes executam / da mesma maneira
+- (C) somente a um método / outras classes executam / de maneira diferente
+- (D) somente a um método / cada classe executa / da mesma maneira
 
 -----
 

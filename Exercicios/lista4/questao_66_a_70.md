@@ -26,10 +26,10 @@ III. A classe filha é conhecida como superclasse e a classe progenitora como su
 IV. A herança permite o agrupamento de classes relacionadas.
 
 Alternativas:  
-(A) I e II  
+- (A) I e II  
 >**(B) II e IV** 
-(C) I e IV  
-(D) II e III  
+- (C) I e IV  
+- (D) II e III  
 
 
 ---
