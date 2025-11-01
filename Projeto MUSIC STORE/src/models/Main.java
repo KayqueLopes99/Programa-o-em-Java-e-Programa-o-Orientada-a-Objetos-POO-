@@ -9,7 +9,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         SomAmbiente.tocarSomAmbiente("Projeto MUSIC STORE/src/utils/sons/Ambiente/som.wav");
         TelaLoginView.executarMenuLogin(scanner);
-
         scanner.close();
     }
 }

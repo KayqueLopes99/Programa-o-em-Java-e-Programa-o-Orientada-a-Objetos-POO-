@@ -5,8 +5,11 @@
 - 78) > (C)
 **(C)**
 > *Exemplo no erro (A): public class Figura tinha um método abstrato, mas a classe não era. Eliminada.
+
 > *Exemplo nos erros (A) e (B): PI=3.14159; tentava modificar a variável PI que era final. Eliminadas.
+
 > *Exemplo no erro (D): Circ implementava ICirculo mas não fornecia o método centroY(). Eliminada.
+
 > *Exemplo no erro (E): public class Circ extends ICirculo tentava herdar de uma interface.
 ```java
 package P1;
