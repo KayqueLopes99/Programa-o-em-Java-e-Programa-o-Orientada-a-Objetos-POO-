@@ -6,10 +6,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.AllArgsConstructor;
-
+import com.educandoweb.course.Entities.enums.OrderStatus;
 import java.io.Serializable;
 
 import jakarta.persistence.Entity;
@@ -24,8 +22,6 @@ import jakarta.persistence.ManyToOne;
 @Table(name = "tb_order")
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 
 public class Order implements Serializable {
@@ -38,7 +34,29 @@ public class Order implements Serializable {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
     private Instant moment;
 
+    private Integer status;
+
     @ManyToOne
     @JoinColumn(name = "client_id")
     private User client;
+
+    public Order() {
+    }
+
+    public Order(Long id, Instant moment, OrderStatus status, User client) {
+        this.id = id;
+        this.moment = moment;
+        setStatus(status);
+        this.client = client;
+    }
+
+    public OrderStatus getStatus() {
+        return OrderStatus.valueOf(status);
+    }
+
+    public void setStatus(OrderStatus status) {
+        if (status != null) {
+            this.status = status.getCode();
+        }
+    }
 }
