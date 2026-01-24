@@ -16,7 +16,6 @@ public class SeedingConfig implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         // para não criar usuários duplicados toda vez que você reiniciar o projeto.
-        userRepository.deleteAll(); 
 
         User u1 = new User(null, "Maria Brown", "maria@gmail.com", "988888888", "123456");
         User u2 = new User(null, "Alex Green", "alex@gmail.com", "977777777", "123456");
