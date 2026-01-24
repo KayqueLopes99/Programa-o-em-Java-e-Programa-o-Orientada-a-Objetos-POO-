@@ -12,14 +12,14 @@ import java.util.List;
 public class OrderServices {
     
     @Autowired
-    private OrderRepository repository;
+    private OrderRepository orderRepository;
 
     public List<Order> findAll() {
-        return repository.findAll();
+        return orderRepository.findAll();
     }
 
     public Order findById(Long id) {
-        return repository.findById(id).get();
+        return orderRepository.findById(id).get();
     }
 
 }

@@ -11,14 +11,14 @@ import java.util.List;
 public class UserServices {
     
     @Autowired
-    private UserRepository repository;
+    private UserRepository userRepository;
 
     public List<User> findAll() {
-        return repository.findAll();
+        return userRepository.findAll();
     }
 
     public User findById(Long id) {
-        return repository.findById(id).get();
-    }
+        return userRepository.findById(id).get();
 
+}
 }
