@@ -1,19 +1,26 @@
 package com.educandoweb.course.Resources;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.educandoweb.course.Entities.User;
 
+import com.educandoweb.course.Entities.User;
+import com.educandoweb.course.Repositories.UserRepository; 
 
 @RestController
 @RequestMapping(value="/users")
 public class UserResource {
+    
+    @Autowired
+    private UserRepository repository;
 
     @GetMapping
-    public ResponseEntity<User> findAll() {
-        User user = new User(1L, "Kaio", "kaio.@gmail.com", "123456789", "12345");
-        
-        return ResponseEntity.ok().body(user);
+    public ResponseEntity<List<User>> findAll() {
+        List<User> list = repository.findAll();
+        return ResponseEntity.ok().body(list);
     }
 }
