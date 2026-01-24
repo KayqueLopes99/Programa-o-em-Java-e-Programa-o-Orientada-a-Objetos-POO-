@@ -8,7 +8,7 @@ import com.educandoweb.course.Entities.User;
 import java.util.List;
 
 @Service
-public class UserServices {
+public class UserService {
     
     @Autowired
     private UserRepository userRepository;

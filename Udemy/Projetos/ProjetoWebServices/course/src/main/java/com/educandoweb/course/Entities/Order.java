@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import com.educandoweb.course.Entities.enums.OrderStatus;
 import java.io.Serializable;
@@ -22,6 +23,7 @@ import jakarta.persistence.ManyToOne;
 @Table(name = "tb_order")
 @Getter
 @Setter
+@NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 
 public class Order implements Serializable {
@@ -40,8 +42,6 @@ public class Order implements Serializable {
     @JoinColumn(name = "client_id")
     private User client;
 
-    public Order() {
-    }
 
     public Order(Long id, Instant moment, OrderStatus status, User client) {
         this.id = id;

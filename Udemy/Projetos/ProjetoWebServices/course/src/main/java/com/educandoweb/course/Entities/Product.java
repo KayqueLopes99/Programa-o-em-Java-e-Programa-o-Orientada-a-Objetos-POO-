@@ -1,31 +1,31 @@
 package com.educandoweb.course.Entities;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
-
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.Table;
 import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import java.util.Set;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.JoinColumn;
+
+
+import java.util.HashSet;
 
 @Entity
-@Table(name = "tb_category")
+@Table(name = "tb_product")
 @Getter
 @Setter
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Category implements Serializable {
+public class Product implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -34,14 +34,23 @@ public class Category implements Serializable {
     private Long id;
 
     private String name;
+    private String description;
+    private Double price;
+    private String imgUrl;
 
-    @JsonIgnore
+  
     @Setter(AccessLevel.NONE) // Não permitir que a lista seja modificada diretamente
-    @ManyToMany(mappedBy = "categories")
-    private Set<Product> products = new HashSet<>();
+    @ManyToMany
+    @JoinTable(name = "tb_product_category", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
+    private Set<Category> categories = new HashSet<>();
 
-    public Category(Long id, String name) {
+
+    public Product(Long id, String name, String description, Double price, String imgUrl) {
         this.id = id;
         this.name = name;
+        this.description = description;
+        this.price = price;
+        this.imgUrl = imgUrl;
     }
+
 }

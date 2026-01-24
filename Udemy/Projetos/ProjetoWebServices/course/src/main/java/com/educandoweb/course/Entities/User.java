@@ -10,7 +10,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,20 +21,19 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.ArrayList;
 
 @Entity
-@Table(name = "tb_user") 
-@Getter           
-@Setter             
+@Table(name = "tb_user")
+@Getter
+@Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Id 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
-    
+
     private String name;
     private String email;
     private String phone;
@@ -43,6 +41,14 @@ public class User implements Serializable {
 
     @JsonIgnore
     @Setter(AccessLevel.NONE) // Não permitir que a lista seja modificada diretamente
-    @OneToMany(mappedBy = "client") 
+    @OneToMany(mappedBy = "client")
     private List<Order> orders = new ArrayList<>();
+
+    public User(Long id, String name, String email, String phone, String password) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+    }
 }

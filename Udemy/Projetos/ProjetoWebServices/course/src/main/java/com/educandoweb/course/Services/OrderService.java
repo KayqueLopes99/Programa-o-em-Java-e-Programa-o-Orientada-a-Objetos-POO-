@@ -9,7 +9,7 @@ import com.educandoweb.course.Entities.Order;
 import java.util.List;
 
 @Service
-public class OrderServices {
+public class OrderService {
     
     @Autowired
     private OrderRepository orderRepository;

@@ -17,7 +17,7 @@ import com.educandoweb.course.Services.CategoryService;
 
 @RestController
 @RequestMapping(value="/categories")
-public class CategoryResouce {
+public class CategoryResource {
  
     @Autowired
     private CategoryService categoryService;
