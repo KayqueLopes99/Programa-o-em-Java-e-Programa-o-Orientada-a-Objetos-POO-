@@ -14,10 +14,13 @@ import java.io.Serializable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import java.time.Instant;
-
+import java.util.Set;
+import java.util.HashSet;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 
 @Entity
 @Table(name = "tb_order")
@@ -38,9 +41,15 @@ public class Order implements Serializable {
 
     private Integer status;
 
+    
     @ManyToOne
     @JoinColumn(name = "client_id")
     private User client;
+
+
+
+    @OneToMany(mappedBy = "id.order")
+	private Set<OrderItem> items = new HashSet<>();
 
 
     public Order(Long id, Instant moment, OrderStatus status, User client) {
@@ -59,4 +68,9 @@ public class Order implements Serializable {
             this.status = status.getCode();
         }
     }
+
+    public Set<OrderItem> getItems() {
+        return items;
+    }
+
 }
