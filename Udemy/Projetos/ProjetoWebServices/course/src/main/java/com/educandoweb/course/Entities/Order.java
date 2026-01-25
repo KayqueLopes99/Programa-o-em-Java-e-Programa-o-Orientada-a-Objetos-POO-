@@ -11,6 +11,7 @@ import lombok.Setter;
 import com.educandoweb.course.Entities.enums.OrderStatus;
 import java.io.Serializable;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import java.time.Instant;
@@ -18,9 +19,9 @@ import java.util.Set;
 import java.util.HashSet;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 
 @Entity
 @Table(name = "tb_order")
@@ -41,16 +42,15 @@ public class Order implements Serializable {
 
     private Integer status;
 
-    
     @ManyToOne
     @JoinColumn(name = "client_id")
     private User client;
 
-
-
     @OneToMany(mappedBy = "id.order")
-	private Set<OrderItem> items = new HashSet<>();
+    private Set<OrderItem> items = new HashSet<>();
 
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private Payment payment;
 
     public Order(Long id, Instant moment, OrderStatus status, User client) {
         this.id = id;
