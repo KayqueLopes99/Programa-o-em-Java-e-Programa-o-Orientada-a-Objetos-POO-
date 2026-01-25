@@ -12,6 +12,7 @@ import java.util.List;
 
 import com.educandoweb.course.Services.Exceptions.DataBaseException;
 import com.educandoweb.course.Services.Exceptions.ResourceNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class UserService {
@@ -43,9 +44,13 @@ public class UserService {
     }
 
     public User update(Long id, User user) {
+        try{
         User entity = userRepository.getReferenceById(id);
         updateData(entity, user);
         return userRepository.save(entity);
+        } catch (EntityNotFoundException e) {
+            throw new ResourceNotFoundException(id);
+        }
     }
 
     private void updateData(User entity, User user) {
