@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.educandoweb.course.Entities.User;
 import java.util.List;
+import com.educandoweb.course.Services.Exceptions.ResourceNotFoundException;
 
 @Service
 public class UserService {
@@ -18,7 +19,7 @@ public class UserService {
     }
 
     public User findById(Long id) {
-        return userRepository.findById(id).get();
+        return userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(id));
 
     }
 
