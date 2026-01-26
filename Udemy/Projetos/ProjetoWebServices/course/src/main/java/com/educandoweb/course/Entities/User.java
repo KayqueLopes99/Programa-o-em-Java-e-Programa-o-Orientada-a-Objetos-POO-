@@ -1,8 +1,6 @@
 package com.educandoweb.course.Entities;
 
 import java.io.Serializable;
-
-// ATENÇÃO AOS IMPORTS AQUI:
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
