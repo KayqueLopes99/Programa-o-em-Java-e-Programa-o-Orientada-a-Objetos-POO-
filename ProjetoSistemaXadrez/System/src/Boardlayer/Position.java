@@ -1,4 +1,4 @@
-package Boardlayer;
+package boardlayer;
 
 public class Position {
     private int row;
