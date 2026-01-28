@@ -1,13 +1,16 @@
 package com.kayquelopes.workshopmongo.domain;
 
 import java.io.Serializable;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-// @Entity
-// @Table(name = "tb_user")
+@Document(collection = "user") // @Table(name = "tb_user")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,18 +18,13 @@ import lombok.Setter;
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    
+    @Id
     @EqualsAndHashCode.Include
-    private Long id;
+    private String id;
     private String name;
     private String email;
 
-    // @JsonIgnore
-    // @Setter(AccessLevel.NONE) // Não permitir que a lista seja modificada
-    // diretamente
-    // @OneToMany(mappedBy = "client")
-
-    public User(Long id, String name, String email) {
+    public User(String id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
